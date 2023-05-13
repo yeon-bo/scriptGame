@@ -1,0 +1,61 @@
+{
+  "fileName": "story1",
+  "section" : [
+    {
+    "place": "home",
+    "placeImage":"...",
+    "script": [
+      {
+        "type": "word",
+        "character" : "hue",
+        "image":"...",
+        "position": "right",
+        "positionBoolean": true,
+        "speech": ["보통","이렇게","대사"]
+      },
+      {
+        "type": "word",
+        "character" : "kirf",
+        "image":"...",
+        "position": "right",
+        "positionBoolean": false,
+        "speech": ["이미지를","false할땐","대사후","사라지게"]
+      },
+      {
+        "type": "select",
+        "speech": ["대사가","있다면"],
+        "selectOption": [
+          {
+            "option":"선택1",
+            "trust":1,
+            "Confidence": 0,
+            "item":"책",
+            "ending": null
+          },
+          {
+            "option":"선택2",
+            "trust": 0,
+            "Confidence": 0,
+            "item": null,
+            "ending": null
+          }
+        ]
+      }
+    ]
+    },
+    {
+      "place": "forest",
+      "image":"...",
+      "script": [
+        {
+          "type": "word",
+          "character" : "hue",
+          "image":"...",
+          "position": "right",
+          "positionBoolean": false,
+          "speech": ["가나다","라마바","사아자차","카타파하"]
+        }
+      ]
+    }
+  ]
+}

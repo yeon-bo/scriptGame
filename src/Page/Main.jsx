@@ -21,7 +21,10 @@ const Main = () => {
   return (
     <>
       {arr.map((a) => (
-        <div>{a.character}</div>
+        <div>
+          <span>{a.character}: </span>
+          <span>{a.script}</span>
+        </div>
       ))}
     </>
   );

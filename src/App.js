@@ -1,41 +1,51 @@
 /** @jsxImportSource @emotion/react */
-import { css, jsx } from "@emotion/react";
-import styled from "@emotion/styled";
+// import { css, jsx } from "@emotion/react";
+// import styled from "@emotion/styled";
 import "./App.css";
+import { Routes, Route } from "react-router-dom"; // Link
+import {
+  Home,
+  Main,
+  Story,
+  SaveStory,
+  EndingCollection,
+  NotFound,
+} from "./Page/";
 
-import { Main } from "./Page/";
+// const style = css`
+//   color: hotpink;
+// `;
 
-const style = css`
-  color: hotpink;
-`;
+// const SomeComponent = ({ children }) => (
+//   <div css={style}>
+//     Some hotpink text.
+//     {children}
+//   </div>
+// );
 
-const SomeComponent = ({ children }) => (
-  <div css={style}>
-    Some hotpink text.
-    {children}
-  </div>
-);
+// const anotherStyle = css({
+//   textDecoration: "underline",
+// });
 
-const anotherStyle = css({
-  textDecoration: "underline",
-});
-
-const AnotherComponent = () => (
-  <div css={anotherStyle}>Some text with an underline.</div>
-);
-
-const Button = styled.button`
-  color: hotpink;
-`;
+// const AnotherComponent = () => (
+//   <div css={anotherStyle}>Some text with an underline.</div>
+// );
 
 function App() {
   return (
     <div className="App">
-      <SomeComponent>
+      {/* <SomeComponent>
         <AnotherComponent />
         <Button>This is a hotpink button.</Button>
-        <Main />
-      </SomeComponent>
+      </SomeComponent> */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/main" element={<Main />} />
+        <Route path="/story" element={<Story />} />
+        <Route path="/savelist" element={<SaveStory />} />
+        <Route path="/endingcollection" element={<EndingCollection />} />
+        <Route path="/*" element={<NotFound />} />
+      </Routes>
     </div>
   );
 }

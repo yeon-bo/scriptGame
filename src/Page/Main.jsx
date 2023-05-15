@@ -1,32 +1,45 @@
 /** @jsxImportSource @emotion/react */
-import { css, jsx } from "@emotion/react";
 import styled from "@emotion/styled";
-const jsonData = require("../example.json");
+import { Link } from "react-router-dom";
 
-let arr = [];
-for (let i = 0; jsonData.section.length >= i + 1; i++) {
-  for (let j = 0; jsonData.section[i].script.length >= j + 1; j++) {
-    for (let k = 0; jsonData.section[i].script[j].speech.length >= k + 1; k++) {
-      if (jsonData.section[i].script[j].type == "word") {
-        arr.push({
-          script: jsonData.section[i].script[j].speech[k],
-          character: jsonData.section[i].script[j].character,
-        });
-      }
-    }
-  }
-}
+const Background = styled.div`
+  background-color: #000;
+  height: 100vh;
+`;
+
+const GameStartText = styled.div`
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 50vw;
+  transform: translateX(-50%);
+  bottom: 12vh;
+`;
+const ButtonText = styled.span`
+  display: inline-block;
+  background: linear-gradient(90deg, #000, rgba(255, 255, 255, 0.5), #000);
+  width: 10em;
+  color: #fff;
+  font-size: 2em;
+  margin-top: 20px;
+`;
 
 const Main = () => {
   return (
-    <>
-      {arr.map((a) => (
-        <div>
-          <span>{a.character}: </span>
-          <span>{a.script}</span>
-        </div>
-      ))}
-    </>
+    <Background>
+      <GameStartText>
+        <Link to={"/story"}>
+          <ButtonText>새로 시작</ButtonText>
+        </Link>
+        <Link to={"/savelist"}>
+          <ButtonText>이어하기</ButtonText>
+        </Link>
+        <Link to={"/endingcollection"}>
+          <ButtonText>엔딩 컬렉션</ButtonText>
+        </Link>
+      </GameStartText>
+    </Background>
   );
 };
 

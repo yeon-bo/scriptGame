@@ -1,3 +1,5 @@
 import MusicBox from "./MusicBox";
+import SelectFunc from "./SelectFunc";
+import TypingEffect from "./TypingEffect";
 
-export { MusicBox };
+export { MusicBox, SelectFunc, TypingEffect };

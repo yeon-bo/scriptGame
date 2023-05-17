@@ -1,6 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import styled from "@emotion/styled";
 import { Link } from "react-router-dom";
+import { MusicBox } from "../Component";
 
 const Background = styled.div`
   background-color: #000;
@@ -39,6 +40,7 @@ const Main = () => {
           <ButtonText>엔딩 컬렉션</ButtonText>
         </Link>
       </GameStartText>
+      <MusicBox videoKey={"wOxi8rT8L-s?autoplay=1&mute=1"} blink={true} />
     </Background>
   );
 };

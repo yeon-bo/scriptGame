@@ -7,6 +7,7 @@ import {
   Home,
   Main,
   Story,
+  Ending,
   SaveStory,
   EndingCollection,
   NotFound,
@@ -42,6 +43,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/main" element={<Main />} />
         <Route path="/story" element={<Story />} />
+        <Route path="/ending" element={<Ending />} />
         <Route path="/savelist" element={<SaveStory />} />
         <Route path="/endingcollection" element={<EndingCollection />} />
         <Route path="/*" element={<NotFound />} />

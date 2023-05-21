@@ -76,16 +76,7 @@ const ScriptText = styled.span`
   line-height: 1.8em;
 `;
 
-const MainView = ({
-  jsonData,
-  setCount,
-  setTrust,
-  setConfidence,
-  setItem,
-  setSelectDance,
-  setPresent,
-  setHidden,
-}) => {
+const EndingView = ({ jsonData, setCount }) => {
   // 타이핑 이벡트 유무 체크
   const [typingE, setTypingE] = useState(true);
   // import 데이터
@@ -121,6 +112,7 @@ const MainView = ({
 
   useEffect(() => {
     if (scriptType[0] === "select" && scriptType[1] === false) {
+      console.log("useEffect");
       SelectClick(
         data,
         section,
@@ -150,7 +142,6 @@ const MainView = ({
       setCharacter(jsonData.section[0].script[0].character);
       setLeftImage(jsonData.section[0].script[0].leftImage);
       setRightImage(jsonData.section[0].script[0].rightImage);
-      setText(jsonData.section[0].script[0].speech[0]);
       setData(jsonData);
     }
   }, [jsonData]);
@@ -249,4 +240,4 @@ const MainView = ({
   );
 };
 
-export default MainView;
+export default EndingView;

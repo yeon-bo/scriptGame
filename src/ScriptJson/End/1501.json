@@ -4,8 +4,7 @@
   "section": [
     {
       "place": "home",
-      "placeImage": "...",
-      "count": 4,
+      "placeImage": "forest",
       "script": [
         {
           "type": "word",
@@ -33,6 +32,8 @@
               "trust": 1,
               "Confidence": 0,
               "item": "책",
+              "present": "",
+              "ending": null,
               "script": [
                 {
                   "type": "word",
@@ -58,24 +59,83 @@
                   "count": 1,
                   "speech": ["!"]
                 }
-              ],
-              "ending": null
+              ]
             },
             {
               "option": "선택2",
               "trust": 1,
               "Confidence": 0,
-              "item": "책",
-              "speech": ["대사가", "있다면"],
-              "ending": null
+              "item": "",
+              "present": "",
+              "ending": null,
+              "script": [
+                {
+                  "type": "word",
+                  "character": "휴",
+                  "leftImage": "hue",
+                  "rightImage": null,
+                  "count": 2,
+                  "speech": ["두번째", "선택지"]
+                },
+                {
+                  "type": "word",
+                  "character": "카르프",
+                  "leftImage": "hue",
+                  "rightImage": "karf",
+                  "count": 2,
+                  "speech": ["성공", "!"]
+                }
+              ]
             },
             {
               "option": "선택3",
-              "trust": 0,
+              "trust": 1,
               "Confidence": 0,
-              "item": null,
-              "speech": ["대사가", "있다면"],
-              "ending": null
+              "item": "책",
+              "present": "",
+              "ending": null,
+              "script": [
+                {
+                  "type": "word",
+                  "character": "휴",
+                  "leftImage": "hue",
+                  "rightImage": null,
+                  "count": 3,
+                  "speech": ["나", "진짜", "힘들었다"]
+                },
+                {
+                  "type": "word",
+                  "character": "카르프",
+                  "leftImage": null,
+                  "rightImage": "karf",
+                  "count": 2,
+                  "speech": ["ㅠㅠ", "나도"]
+                },
+                {
+                  "type": "word",
+                  "character": "휴",
+                  "leftImage": "hue",
+                  "rightImage": "karf",
+                  "count": 1,
+                  "speech": ["이제 끝이다"]
+                },
+                {
+                  "type": "word",
+                  "character": "카르프",
+                  "leftImage": null,
+                  "rightImage": "karf",
+                  "count": 2,
+                  "speech": ["와아", "아..."]
+                },
+                {
+                  "type": "word",
+                  "character": "휴",
+                  "leftImage": "hue",
+                  "rightImage": "karf",
+                  "count": 1,
+                  "speech": ["뻥이야"]
+                }
+              ]
             }
           ]
         },
@@ -86,37 +146,12 @@
           "rightImage": "karf",
           "count": 1,
           "speech": ["슬프네"]
-        },
-        {
-          "type": "word",
-          "character": "휴",
-          "leftImage": "hue",
-          "rightImage": "karf",
-          "count": 2,
-          "speech": ["슬퍼하지 말아요.", "저도 슬퍼요"]
-        },
-        {
-          "type": "word",
-          "character": "카르프",
-          "leftImage": "hue",
-          "rightImage": "karf",
-          "count": 1,
-          "speech": ["더 슬퍼졌어.."]
-        },
-        {
-          "type": "word",
-          "character": "휴",
-          "leftImage": "hue",
-          "rightImage": "karf",
-          "count": 3,
-          "speech": ["...", "ㅜ", "ㅜㅜ.."]
         }
       ]
     },
     {
-      "place": "home",
-      "placeImage": "...",
-      "count": 3,
+      "place": "forest",
+      "placeImage": "sea",
       "script": [
         {
           "type": "word",

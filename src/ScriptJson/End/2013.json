@@ -1,0 +1,180 @@
+{
+  "fileName": "story1",
+  "count": 2,
+  "section": [
+    {
+      "place": "home",
+      "placeImage": "sea",
+      "script": [
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 3,
+          "speech": ["우와 카르프, 눈이 와요!", "…", "대답이 없네요."]
+        },
+        {
+          "type": "word",
+          "character": "카르프",
+          "leftImage": "hue",
+          "rightImage": "karf",
+          "count": 2,
+          "speech": ["등장", "…"]
+        },
+        {
+          "type": "select",
+          "count": 1,
+          "speech": [],
+          "selectOption": [
+            {
+              "option": "선택1",
+              "trust": 1,
+              "Confidence": 0,
+              "item": "책",
+              "ending": null,
+              "script": [
+                {
+                  "type": "word",
+                  "character": "휴",
+                  "leftImage": "hue",
+                  "rightImage": null,
+                  "count": 3,
+                  "speech": ["1", "2", "3"]
+                },
+                {
+                  "type": "word",
+                  "character": "카르프",
+                  "leftImage": null,
+                  "rightImage": "karf",
+                  "count": 2,
+                  "speech": ["4", "5"]
+                },
+                {
+                  "type": "word",
+                  "character": "휴",
+                  "leftImage": "hue",
+                  "rightImage": "karf",
+                  "count": 1,
+                  "speech": ["!"]
+                }
+              ]
+            },
+            {
+              "option": "선택2",
+              "trust": 1,
+              "Confidence": 0,
+              "item": "",
+              "ending": null,
+              "script": [
+                {
+                  "type": "word",
+                  "character": "휴",
+                  "leftImage": "hue",
+                  "rightImage": null,
+                  "count": 2,
+                  "speech": ["두번째", "선택지"]
+                },
+                {
+                  "type": "word",
+                  "character": "카르프",
+                  "leftImage": "hue",
+                  "rightImage": "karf",
+                  "count": 2,
+                  "speech": ["성공", "!"]
+                }
+              ]
+            },
+            {
+              "option": "선택3",
+              "trust": 1,
+              "Confidence": 0,
+              "item": "책",
+              "ending": null,
+              "script": [
+                {
+                  "type": "word",
+                  "character": "휴",
+                  "leftImage": "hue",
+                  "rightImage": null,
+                  "count": 3,
+                  "speech": ["나", "진짜", "힘들었다"]
+                },
+                {
+                  "type": "word",
+                  "character": "카르프",
+                  "leftImage": null,
+                  "rightImage": "karf",
+                  "count": 2,
+                  "speech": ["ㅠㅠ", "나도"]
+                },
+                {
+                  "type": "word",
+                  "character": "휴",
+                  "leftImage": "hue",
+                  "rightImage": "karf",
+                  "count": 1,
+                  "speech": ["이제 끝이다"]
+                },
+                {
+                  "type": "word",
+                  "character": "카르프",
+                  "leftImage": null,
+                  "rightImage": "karf",
+                  "count": 2,
+                  "speech": ["와아", "아..."]
+                },
+                {
+                  "type": "word",
+                  "character": "휴",
+                  "leftImage": "hue",
+                  "rightImage": "karf",
+                  "count": 1,
+                  "speech": ["뻥이야"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "word",
+          "character": "카르프",
+          "leftImage": null,
+          "rightImage": "karf",
+          "count": 1,
+          "speech": ["슬프네"]
+        }
+      ]
+    },
+    {
+      "place": "forest",
+      "placeImage": "forest",
+      "script": [
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 3,
+          "speech": ["우와 카르프, 눈이 와요!", "…", "대답이 없네요."]
+        },
+        {
+          "type": "word",
+          "character": "카르프",
+          "leftImage": "hue",
+          "rightImage": "karf",
+          "count": 2,
+          "speech": ["등장", "…"]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": "karf",
+          "count": 1,
+          "speech": ["!"]
+        }
+      ]
+    }
+  ]
+}

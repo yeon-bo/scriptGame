@@ -1,0 +1,37 @@
+{
+  "fileName": "story1",
+  "count": 1,
+  "section": [
+    {
+      "place": "home",
+      "placeImage": "sky",
+      "count": 3,
+      "script": [
+        {
+          "type": "word",
+          "character": "카르프",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 3,
+          "speech": ["제대로될까?", "ㅜㅜ", "제발"]
+        },
+        {
+          "type": "word",
+          "character": "카르프",
+          "leftImage": "hue",
+          "rightImage": "karf",
+          "count": 2,
+          "speech": ["등장", "…"]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": "karf",
+          "count": 3,
+          "speech": ["...", "ㅜ", "ㅜㅜ.."]
+        }
+      ]
+    }
+  ]
+}

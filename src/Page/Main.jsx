@@ -27,11 +27,16 @@ const ButtonText = styled.span`
 `;
 
 const Main = () => {
+  const handleRemoveCount = (event) => {
+    event.stopPropagation();
+    localStorage.removeItem("count");
+  };
+
   return (
     <Background>
       <GameStartText>
         <Link to={"/story"}>
-          <ButtonText>새로 시작</ButtonText>
+          <ButtonText onClick={handleRemoveCount}>새로 시작</ButtonText>
         </Link>
         <Link to={"/story"}>
           <ButtonText>이어하기</ButtonText>

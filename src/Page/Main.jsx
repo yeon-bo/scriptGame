@@ -33,8 +33,11 @@ const Main = () => {
         <Link to={"/story"}>
           <ButtonText>새로 시작</ButtonText>
         </Link>
-        <Link to={"/savelist"}>
+        <Link to={"/story"}>
           <ButtonText>이어하기</ButtonText>
+        </Link>
+        <Link to={"/savelist"}>
+          <ButtonText>불러오기</ButtonText>
         </Link>
         <Link to={"/endingcollection"}>
           <ButtonText>엔딩 컬렉션</ButtonText>

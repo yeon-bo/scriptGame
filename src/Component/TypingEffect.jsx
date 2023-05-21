@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const TypingEffect = ({ text }) => {
+const TypingEffect = ({ text, typingE, setTypingE }) => {
   const [typedText, setTypedText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -11,6 +11,7 @@ const TypingEffect = ({ text }) => {
         setCurrentIndex((prevIndex) => prevIndex + 1);
       } else {
         clearInterval(typingInterval);
+        setTypingE(!typingE);
       }
     }, 100); // 한 글자가 나타나는 간격(ms)
     return () => {

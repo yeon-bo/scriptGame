@@ -18,7 +18,7 @@ const SelectBoxCont = styled.div`
   align-items: center;
   flex-direction: column;
   height: 75vh;
-  width: 50vw;
+  width: 40vw;
   z-index: 10;
 `;
 
@@ -26,25 +26,45 @@ const SelectBox = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  max-height: 15vh;
+  max-height: 17vh;
   min-height: 10vh;
   width: 100%;
   font-size: 1.5em;
   background-color: #75a175;
   + div {
-    margin-top: 3vh;
+    margin-top: 2vh;
   }
   &:hover {
     filter: brightness(150%);
   }
 `;
 
-const SelectFunc = ({ box }) => {
+const SelectFunc = ({
+  selectData,
+  setSelectData,
+  setScriptType,
+  script,
+  setScript,
+  setSpeech,
+  selectBoolean,
+  setSelectBoolean,
+}) => {
   return (
     <Position>
       <SelectBoxCont>
-        {box.map((e, index) => (
-          <SelectBox key={index}>{e.text}</SelectBox>
+        {selectData.selectOption.map((e, index) => (
+          <SelectBox
+            key={index}
+            onClick={() => {
+              setSelectData(null);
+              setScriptType(["select", false]);
+              setScript(script + 1);
+              setSpeech(0);
+              setSelectBoolean(index + 1);
+            }}
+          >
+            {e.option}
+          </SelectBox>
         ))}
       </SelectBoxCont>
     </Position>

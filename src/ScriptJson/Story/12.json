@@ -63,7 +63,7 @@
             },
             {
               "option": "선택2",
-              "trust": 1,
+              "trust": 2,
               "Confidence": 0,
               "item": "",
               "present": "",
@@ -89,7 +89,7 @@
             },
             {
               "option": "선택3",
-              "trust": 1,
+              "trust": 3,
               "Confidence": 0,
               "item": "책",
               "present": "",

@@ -79,6 +79,7 @@ const ScriptText = styled.span`
 const MainView = ({
   jsonData,
   setCount,
+  trust,
   setTrust,
   setConfidence,
   setItem,
@@ -118,6 +119,8 @@ const MainView = ({
   const [text, setText] = useState(
     data.section[section].script[script].speech[speech]
   );
+
+  const sectionType = "story";
 
   useEffect(() => {
     if (scriptType[0] === "select" && scriptType[1] === false) {
@@ -170,6 +173,7 @@ const MainView = ({
           setSpeech={(e) => setSpeech(e)}
           selectBoolean={selectBoolean}
           setSelectBoolean={(e) => setSelectBoolean(e)}
+          setTrust={setTrust}
         />
       ) : null}
       {/* 캐릭터 이미지 */}
@@ -207,10 +211,12 @@ const MainView = ({
                   setSpeech
                 )
               : ScriptClick(
+                  sectionType,
                   data,
                   section,
                   script,
                   speech,
+                  trust,
                   setCount,
                   setTypingE,
                   setText,
@@ -222,7 +228,6 @@ const MainView = ({
                   setScript,
                   setSection,
                   setSelectData,
-                  setSelectBoolean,
                   setScriptType
                 );
           }

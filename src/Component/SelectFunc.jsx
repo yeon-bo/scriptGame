@@ -48,6 +48,7 @@ const SelectFunc = ({
   setSpeech,
   selectBoolean,
   setSelectBoolean,
+  setTrust,
 }) => {
   return (
     <Position>
@@ -61,6 +62,7 @@ const SelectFunc = ({
               setScript(script + 1);
               setSpeech(0);
               setSelectBoolean(index + 1);
+              setTrust((prev) => prev + e.trust);
             }}
           >
             {e.option}

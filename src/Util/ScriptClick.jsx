@@ -1,8 +1,10 @@
 export const ScriptClick = (
+  sectionType,
   data,
   section,
   script,
   speech,
+  trust,
   setCount,
   setTypingE,
   setText,
@@ -14,7 +16,6 @@ export const ScriptClick = (
   setScript,
   setSection,
   setSelectData,
-  setSelectBoolean,
   setScriptType
 ) => {
   const currentSection = data.section[section];
@@ -25,7 +26,7 @@ export const ScriptClick = (
 
   const nextScript = currentSection.script[script + 1];
 
-  // Check if all speeches have been displayed for the current script
+  // 해당 speech(대사)를 모두 출력했는가? no면 다음 speech로
   if (currentScript.speech.length !== speech + 1) {
     setTypingE(true);
     setText(currentScript.speech[speech + 1]);
@@ -33,7 +34,7 @@ export const ScriptClick = (
     return null;
   }
 
-  // Check if all scripts have been displayed for the current section
+  // 해당 script(캐릭터대사)를 모두 출력했는가? no면 다음 script로
   if (nextScript) {
     if (nextScript.type === "select") {
       setScriptType(["select", true]);
@@ -53,12 +54,19 @@ export const ScriptClick = (
   }
 
   const scriptBranch = (e) => {
+    if (sectionType === "ending" && e > 50) {
+      localStorage.removeItem("count");
+      window.location.href = "/main";
+    }
     if (e === 16) return 20;
     if (e === 24) return 30;
+    if (trust < 50) return 400;
+    if (trust < 100) return 923;
+    if (trust >= 100) return 125;
     return e + 1;
   };
 
-  // Check if all speeches have been displayed for the current section
+  // 해당 section(장소)를 모두 출력했는가? no면 다음 section로
   const nextSection = data.section[section + 1];
   if (nextSection) {
     setPlace(data.section[section + 1].placeImage);
@@ -75,7 +83,8 @@ export const ScriptClick = (
     setSection(0);
     setScript(0);
     setSpeech(0);
-    setCount((prev) => scriptBranch(prev));
+    // 기존 count 변경
+    setCount((e) => scriptBranch(e));
     return null;
   }
 };

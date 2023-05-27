@@ -76,7 +76,16 @@ const ScriptText = styled.span`
   line-height: 1.8em;
 `;
 
-const EndingView = ({ jsonData, setCount }) => {
+const EndingView = ({
+  jsonData,
+  setCount,
+  setTrust,
+  setConfidence,
+  setItem,
+  setSelectDance,
+  setPresent,
+  setHidden,
+}) => {
   // 타이핑 이벡트 유무 체크
   const [typingE, setTypingE] = useState(true);
   // import 데이터
@@ -109,10 +118,10 @@ const EndingView = ({ jsonData, setCount }) => {
   const [text, setText] = useState(
     data.section[section].script[script].speech[speech]
   );
+  const sectionType = "ending";
 
   useEffect(() => {
     if (scriptType[0] === "select" && scriptType[1] === false) {
-      console.log("useEffect");
       SelectClick(
         data,
         section,
@@ -142,6 +151,7 @@ const EndingView = ({ jsonData, setCount }) => {
       setCharacter(jsonData.section[0].script[0].character);
       setLeftImage(jsonData.section[0].script[0].leftImage);
       setRightImage(jsonData.section[0].script[0].rightImage);
+      setText(jsonData.section[0].script[0].speech[0]);
       setData(jsonData);
     }
   }, [jsonData]);
@@ -161,6 +171,7 @@ const EndingView = ({ jsonData, setCount }) => {
           setSpeech={(e) => setSpeech(e)}
           selectBoolean={selectBoolean}
           setSelectBoolean={(e) => setSelectBoolean(e)}
+          setTrust={setTrust}
         />
       ) : null}
       {/* 캐릭터 이미지 */}
@@ -198,6 +209,7 @@ const EndingView = ({ jsonData, setCount }) => {
                   setSpeech
                 )
               : ScriptClick(
+                  sectionType,
                   data,
                   section,
                   script,
@@ -213,7 +225,6 @@ const EndingView = ({ jsonData, setCount }) => {
                   setScript,
                   setSection,
                   setSelectData,
-                  setSelectBoolean,
                   setScriptType
                 );
           }

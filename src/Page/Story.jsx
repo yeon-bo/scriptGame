@@ -1,21 +1,19 @@
 import React, { useEffect } from "react";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { atom, useAtom } from "jotai";
 import { MainView, MusicBox } from "../Component";
 const jsonData10 = require("../ScriptJson/Story/10.json");
-const jsonData11 = require("../ScriptJson/Story/11.json");
-const jsonData12 = require("../ScriptJson/Story/12.json");
+// const jsonData11 = require("../ScriptJson/Story/11.json");
+// const jsonData12 = require("../ScriptJson/Story/12.json");
 
 const DataSwitch = (num) => {
-  // const navigate = useNavigate();
-
   switch (num) {
     case 10:
       return jsonData10;
-    case 11:
-      return jsonData11;
-    case 12:
-      return jsonData12;
+    // case 11:
+    //   return jsonData11;
+    // case 12:
+    //   return jsonData12;
     // case 13:
     //   return jsonData13;
     // case 14:
@@ -47,14 +45,14 @@ const DataSwitch = (num) => {
     // case 35:
     //   return jsonData35;
     default:
-      return jsonData10;
-    // navigate("/ending");
+      // return "/ending";
+      return "/ending";
   }
 };
 
 const basicAtom = atom(JSON.parse(localStorage.getItem("count")) || 10);
 const importDataAtom = atom(jsonData10);
-// const trustAtom = atom(0); // 신뢰도
+export const trustAtom = atom(0); // 신뢰도
 // const ConfidenceAtom = atom(0); // 자존감
 // const itemAtom = atom(0); // 소원, 풍등 각각 5점
 // const selectDanceAtom = atom(false); // 춤 선택지
@@ -67,12 +65,15 @@ const MemoizedMusicBox = React.memo(MusicBox);
 const Story = () => {
   const [count, setCount] = useAtom(basicAtom);
   const [importData, setImportData] = useAtom(importDataAtom);
-  // const [trust, setTrust] = useAtom(trustAtom);
+  const [trust, setTrust] = useAtom(trustAtom);
   // const [Confidence, setConfidence] = useAtom(ConfidenceAtom);
   // const [item, setItem] = useAtom(itemAtom);
   // const [selectDance, setSelectDance] = useAtom(selectDanceAtom);
   // const [present, setPresent] = useAtom(presentAtom);
   // const [hidden, setHidden] = useAtom(hiddenAtom);
+
+  const navigate = useNavigate();
+
   // console.log(
   //   count,
   //   importData,
@@ -85,17 +86,26 @@ const Story = () => {
   // );
   useEffect(() => {
     if (count !== 10) {
-      setImportData(DataSwitch(count));
+      const link = DataSwitch(count);
+      setImportData(link);
       localStorage.setItem("count", JSON.stringify(count));
+      // 완성에서는 13지우고 50으로 수정
+      if (count >= 13) {
+        navigate(link); // 링크로 이동
+      }
     }
-  }, [count, setCount]);
-
+  }, [count, setCount, navigate]);
+  useEffect(() => {
+    localStorage.setItem("trust", JSON.stringify(trust));
+    console.log(trust);
+  }, [count, setTrust]);
   return (
     <>
       <MemoizedMainView
         jsonData={importData}
         setCount={setCount}
-        // setTrust={setTrust}
+        trust={trust}
+        setTrust={setTrust}
         // setConfidence={setConfidence}
         // setItem={setItem}
         // setSelectDance={setSelectDance}

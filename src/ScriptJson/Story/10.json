@@ -29,7 +29,7 @@
           "selectOption": [
             {
               "option": "선택1",
-              "trust": 1,
+              "trust": 0,
               "Confidence": 0,
               "item": "책",
               "ending": null,
@@ -62,7 +62,7 @@
             },
             {
               "option": "선택2",
-              "trust": 1,
+              "trust": 50,
               "Confidence": 0,
               "item": "",
               "ending": null,
@@ -87,7 +87,7 @@
             },
             {
               "option": "선택3",
-              "trust": 1,
+              "trust": 100,
               "Confidence": 0,
               "item": "책",
               "ending": null,

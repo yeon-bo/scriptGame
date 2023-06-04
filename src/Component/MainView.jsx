@@ -6,7 +6,12 @@ import { ScriptClick, SelectClick } from "../Util/index";
 
 const Background = styled.div`
   background-image: ${(props) => `url("img/background/${props.place}.jpg")`};
+  background-position: center;
+  background-size: ${(props) =>
+    props.backgroundType !== "illustration" ? "cover" : "contain"};
+  background-repeat: no-repeat;
   height: 100vh;
+  width: 100%;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-use-select: none;
@@ -23,7 +28,7 @@ const CharacterLeft = styled.div`
   position: absolute;
   bottom: 0;
   left: 6vw;
-  background-image: ${(props) => `url("img/${props.leftImage}.png")`};
+  background-image: ${(props) => `url("img/character/${props.leftImage}.png")`};
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
@@ -34,7 +39,8 @@ const CharacterRight = styled.div`
   position: absolute;
   bottom: 0;
   right: 6vw;
-  background-image: ${(props) => `url("img/${props.rightImage}.png")`};
+  background-image: ${(props) =>
+    `url("img/character/${props.rightImage}.png")`};
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
@@ -80,6 +86,11 @@ const MainView = ({
   jsonData,
   setCount,
   trust,
+  Confidence,
+  item,
+  selectDance,
+  present,
+  hidden,
   setTrust,
   setConfidence,
   setItem,
@@ -101,6 +112,10 @@ const MainView = ({
   // 장소 section
   const [section, setSection] = useState(0);
   const [place, setPlace] = useState(data.section[section].placeImage);
+  // 백그라운드 타입
+  const [backgroundType, setBackgroundType] = useState(
+    data.section[section].type
+  );
   // 캐릭터 이름 script
   const [script, setScript] = useState(0);
   const [character, setCharacter] = useState(
@@ -149,6 +164,7 @@ const MainView = ({
 
   useEffect(() => {
     if (jsonData !== data) {
+      setBackgroundType(jsonData.section[0].type);
       setPlace(jsonData.section[0].placeImage);
       setCharacter(jsonData.section[0].script[0].character);
       setLeftImage(jsonData.section[0].script[0].leftImage);
@@ -159,13 +175,47 @@ const MainView = ({
   }, [jsonData]);
 
   return (
-    <Background place={place}>
+    <Background
+      place={place}
+      backgroundType={backgroundType}
+      onClick={() =>
+        backgroundType === "illustration"
+          ? ScriptClick(
+              sectionType,
+              data,
+              section,
+              script,
+              speech,
+              trust,
+              Confidence,
+              item,
+              selectDance,
+              present,
+              hidden,
+              setCount,
+              setTypingE,
+              setText,
+              setSpeech,
+              setCharacter,
+              setLeftImage,
+              setRightImage,
+              setBackgroundType,
+              setPlace,
+              setScript,
+              setSection,
+              setSelectData,
+              setScriptType
+            )
+          : null
+      }
+    >
       {/* 최대 7개 선택지 */}
       {scriptType.length > 0 &&
       scriptType[0] === "select" &&
       scriptType[1] === true ? (
         <SelectFunc
-          selectData={selectData}
+          selectType={"nomal"}
+          selectData={selectData.selectOption}
           setSelectData={(e) => setSelectData(e)}
           setScriptType={(e) => setScriptType(e)}
           script={script}
@@ -174,6 +224,11 @@ const MainView = ({
           selectBoolean={selectBoolean}
           setSelectBoolean={(e) => setSelectBoolean(e)}
           setTrust={setTrust}
+          setConfidence={setConfidence}
+          setItem={setItem}
+          setSelectDance={setSelectDance}
+          setPresent={setPresent}
+          setHidden={setHidden}
         />
       ) : null}
       {/* 캐릭터 이미지 */}
@@ -185,71 +240,79 @@ const MainView = ({
           <CharacterRight rightImage={rightImage} />
         ) : null}
       </CharacterCont>
-      <ScriptBox
-        onClick={() => {
-          if (typingE) {
-            setTypingE(!typingE);
-          } else {
-            selectBoolean
-              ? SelectClick(
-                  data,
-                  section,
-                  script,
-                  selectBoolean,
-                  selectScript,
-                  selectSpeech,
-                  setTypingE,
-                  setCharacter,
-                  setLeftImage,
-                  setRightImage,
-                  setText,
-                  setSelectSpeech,
-                  setSelectScript,
-                  setSelectBoolean,
-                  setScript,
-                  setScriptType,
-                  setSpeech
-                )
-              : ScriptClick(
-                  sectionType,
-                  data,
-                  section,
-                  script,
-                  speech,
-                  trust,
-                  setCount,
-                  setTypingE,
-                  setText,
-                  setSpeech,
-                  setCharacter,
-                  setLeftImage,
-                  setRightImage,
-                  setPlace,
-                  setScript,
-                  setSection,
-                  setSelectData,
-                  setScriptType
-                );
-          }
-        }}
-      >
-        <NameBox>
-          <NameText>
-            {character && character !== "" ? character : null}
-          </NameText>
-        </NameBox>
-        <ScriptText>
-          {text && typingE ? (
-            <TypingEffect
-              text={text && text !== "" ? text : null}
-              typingE={typingE}
-              setTypingE={(e) => setTypingE(e)}
-            />
-          ) : (
-            <span>{text && text !== "" ? text : null}</span>
-          )}
-        </ScriptText>
-      </ScriptBox>
+      {backgroundType === "illustration" ? null : (
+        <ScriptBox
+          onClick={() => {
+            if (typingE) {
+              setTypingE(!typingE);
+            } else {
+              selectBoolean
+                ? SelectClick(
+                    data,
+                    section,
+                    script,
+                    selectBoolean,
+                    selectScript,
+                    selectSpeech,
+                    setTypingE,
+                    setCharacter,
+                    setLeftImage,
+                    setRightImage,
+                    setText,
+                    setSelectSpeech,
+                    setSelectScript,
+                    setSelectBoolean,
+                    setScript,
+                    setScriptType,
+                    setSpeech
+                  )
+                : ScriptClick(
+                    sectionType,
+                    data,
+                    section,
+                    script,
+                    speech,
+                    trust,
+                    Confidence,
+                    item,
+                    selectDance,
+                    present,
+                    hidden,
+                    setCount,
+                    setTypingE,
+                    setText,
+                    setSpeech,
+                    setCharacter,
+                    setLeftImage,
+                    setRightImage,
+                    setBackgroundType,
+                    setPlace,
+                    setScript,
+                    setSection,
+                    setSelectData,
+                    setScriptType
+                  );
+            }
+          }}
+        >
+          <NameBox>
+            <NameText>
+              {character && character !== "" ? character : null}
+            </NameText>
+          </NameBox>
+          <ScriptText>
+            {text && typingE ? (
+              <TypingEffect
+                text={text && text !== "" ? text : null}
+                typingE={typingE}
+                setTypingE={(e) => setTypingE(e)}
+              />
+            ) : (
+              <span>{text && text !== "" ? text : null}</span>
+            )}
+          </ScriptText>
+        </ScriptBox>
+      )}
     </Background>
   );
 };

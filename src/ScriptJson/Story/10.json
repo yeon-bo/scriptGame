@@ -1,9 +1,23 @@
 {
   "fileName": "story1",
-  "count": 2,
+  "count": 4,
   "section": [
     {
-      "place": "home",
+      "type": "illustration",
+      "placeImage": "01",
+      "script": [
+        {
+          "type": "word",
+          "character": null,
+          "leftImage": null,
+          "rightImage": null,
+          "count": 0,
+          "speech": ["…"]
+        }
+      ]
+    },
+    {
+      "type": "nomal",
       "placeImage": "sea",
       "script": [
         {
@@ -30,8 +44,11 @@
             {
               "option": "선택1",
               "trust": 0,
-              "Confidence": 0,
-              "item": "책",
+              "confidence": 3,
+              "item": 0,
+              "selectDance": null,
+              "present": "책",
+              "hidden": null,
               "ending": null,
               "script": [
                 {
@@ -62,9 +79,12 @@
             },
             {
               "option": "선택2",
-              "trust": 50,
-              "Confidence": 0,
-              "item": "",
+              "trust": 0,
+              "confidence": 0,
+              "item": 50,
+              "selectDance": null,
+              "present": "꽃",
+              "hidden": null,
               "ending": null,
               "script": [
                 {
@@ -87,9 +107,12 @@
             },
             {
               "option": "선택3",
-              "trust": 100,
-              "Confidence": 0,
-              "item": "책",
+              "trust": 0,
+              "confidence": 5,
+              "item": 100,
+              "selectDance": null,
+              "present": "펜",
+              "hidden": null,
               "ending": null,
               "script": [
                 {
@@ -147,7 +170,21 @@
       ]
     },
     {
-      "place": "forest",
+      "type": "illustration",
+      "placeImage": "01",
+      "script": [
+        {
+          "type": "word",
+          "character": null,
+          "leftImage": null,
+          "rightImage": null,
+          "count": 0,
+          "speech": ["…"]
+        }
+      ]
+    },
+    {
+      "type": "nomal",
       "placeImage": "forest",
       "script": [
         {

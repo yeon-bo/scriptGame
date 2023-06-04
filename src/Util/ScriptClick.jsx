@@ -5,6 +5,11 @@ export const ScriptClick = (
   script,
   speech,
   trust,
+  Confidence,
+  item,
+  selectDance,
+  present,
+  hidden,
   setCount,
   setTypingE,
   setText,
@@ -12,6 +17,7 @@ export const ScriptClick = (
   setCharacter,
   setLeftImage,
   setRightImage,
+  setBackgroundType,
   setPlace,
   setScript,
   setSection,
@@ -43,7 +49,7 @@ export const ScriptClick = (
     }
 
     setTypingE(true);
-    setScriptType(["word"]);
+    if (sectionType === "story") setScriptType(["word"]);
     setCharacter(nextScript.character);
     setLeftImage(nextScript.leftImage);
     setRightImage(nextScript.rightImage);
@@ -60,16 +66,19 @@ export const ScriptClick = (
     }
     if (e === 16) return 20;
     if (e === 24) return 30;
-    if (trust < 50) return 400;
-    if (trust < 100) return 923;
-    if (trust >= 100) return 125;
+    // if (e > 11) {
+    //   if (trust < 50) return 400;
+    //   if (trust < 100) return 923;
+    //   if (trust >= 100) return 125;
+    // }
     return e + 1;
   };
 
   // 해당 section(장소)를 모두 출력했는가? no면 다음 section로
   const nextSection = data.section[section + 1];
   if (nextSection) {
-    setPlace(data.section[section + 1].placeImage);
+    setBackgroundType(nextSection.type);
+    setPlace(nextSection.placeImage);
     setCharacter(nextSection.script[0].character);
     setLeftImage(nextSection.script[0].leftImage);
     setRightImage(nextSection.script[0].rightImage);

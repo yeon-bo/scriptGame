@@ -40,6 +40,7 @@ const SelectBox = styled.div`
 `;
 
 const SelectFunc = ({
+  selectType,
   selectData,
   setSelectData,
   setScriptType,
@@ -49,28 +50,116 @@ const SelectFunc = ({
   selectBoolean,
   setSelectBoolean,
   setTrust,
+  setConfidence,
+  setItem,
+  setSelectDance,
+  setPresent,
+  setHidden,
+  data,
+  setCurrentPlace,
+  setSection,
+  setPlace,
+  setCharacter,
+  setLeftImage,
+  setRightImage,
+  setText,
 }) => {
-  return (
-    <Position>
-      <SelectBoxCont>
-        {selectData.selectOption.map((e, index) => (
-          <SelectBox
-            key={index}
-            onClick={() => {
-              setSelectData(null);
-              setScriptType(["select", false]);
-              setScript(script + 1);
-              setSpeech(0);
-              setSelectBoolean(index + 1);
-              setTrust((prev) => prev + e.trust);
-            }}
-          >
-            {e.option}
-          </SelectBox>
-        ))}
-      </SelectBoxCont>
-    </Position>
-  );
+  const selectSwitch = (num) => {
+    switch (num) {
+      case "nomal":
+        return (
+          <SelectBoxCont>
+            {selectData.map((e, index) => (
+              <SelectBox
+                key={index}
+                onClick={() => {
+                  setSelectData(null);
+                  setScriptType(["select", false]);
+                  setScript(script + 1);
+                  setSpeech(0);
+                  setSelectBoolean(index + 1);
+                  setTrust((prev) => prev + e.trust);
+                  setConfidence((prev) => prev + e.confidence);
+                  setItem((prev) => prev + e.item);
+                  setSelectDance(() => e.selectDance);
+                  setPresent((prev) => [...prev, e.present]);
+                  setHidden(() => e.hidden);
+                }}
+              >
+                {e.option}
+              </SelectBox>
+            ))}
+          </SelectBoxCont>
+        );
+      case "place":
+        return (
+          <SelectBoxCont>
+            {selectData.map((e, index) => (
+              <SelectBox
+                key={index}
+                onClick={() => {
+                  setSelectData(null);
+                  setSection(index + 1);
+                  setCurrentPlace([false, index + 1]);
+                  setPlace(data.section[index + 1].placeImage);
+                  setCharacter(data.section[index + 1].script[0].character);
+                  setLeftImage(data.section[index + 1].script[0].leftImage);
+                  setRightImage(data.section[index + 1].script[0].rightImage);
+                  setText(data.section[index + 1].script[0].speech[0]);
+                }}
+              >
+                {e}
+              </SelectBox>
+            ))}
+          </SelectBoxCont>
+        );
+      case "00":
+        return (
+          <SelectBoxCont>
+            {selectData.map((e, index) => (
+              <SelectBox
+                key={index}
+                onClick={() => {
+                  setSelectData(null);
+                  setScriptType(["select", false]);
+                  setScript(script + 1);
+                  setSpeech(0);
+                  setSelectBoolean(index + 1);
+                  setTrust((prev) => prev + e.trust);
+                  setConfidence((prev) => prev + e.confidence);
+                  setItem((prev) => prev + e.item);
+                  setSelectDance(() => e.selectDance);
+                  setPresent((prev) => [...prev, e.present]);
+                  setHidden(() => e.hidden);
+                }}
+              >
+                {e.option}
+              </SelectBox>
+            ))}
+            {
+              <SelectBox
+                onClick={() => {
+                  setSelectData(null);
+                  setSection(0);
+                  setCurrentPlace([false, 0]);
+                  setPlace(data.section[0].placeImage);
+                  setCharacter(data.section[0].script[0].character);
+                  setLeftImage(data.section[0].script[0].leftImage);
+                  setRightImage(data.section[0].script[0].rightImage);
+                  setText(data.section[0].script[0].speech[0]);
+                }}
+              >
+                나가기
+              </SelectBox>
+            }
+          </SelectBoxCont>
+        );
+      default:
+        return null;
+    }
+  };
+
+  return <Position>{selectSwitch(selectType)}</Position>;
 };
 
 export default SelectFunc;

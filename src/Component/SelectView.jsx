@@ -107,7 +107,7 @@ const SelectView = ({
   const [selectScript, setSelectScript] = useState(0);
   const [selectSpeech, setSelectSpeech] = useState(0);
   // 백그라운드 타입
-  const [placeArr, setPlacearr] = useState(data.placeArr[0]);
+  const [placeArr] = useState(data.placeArr);
   const [currentPlace, setCurrentPlace] = useState([false, 0]);
   // 장소 section
   const [section, setSection] = useState(0);
@@ -168,6 +168,7 @@ const SelectView = ({
         return null;
       }
 
+      console.log(currentPlace);
       setTypingE(true);
       if (sectionType === "story") setScriptType(["word"]);
       setCharacter(nextScript.character);
@@ -179,32 +180,55 @@ const SelectView = ({
       return null;
     }
 
-    const scriptBranch = (e) => {
-      if (sectionType === "ending" && e > 50) {
-        localStorage.removeItem("count");
-        window.location.href = "/main";
+    // const scriptBranch = (e) => {
+    //   if (sectionType === "ending" && e > 50) {
+    //     localStorage.removeItem("count");
+    //     window.location.href = "/main";
+    //   }
+    //   if (e === 16) return 20;
+    //   if (e === 24) return 30;
+    //   // if (e > 11) {
+    //   //   if (trust < 50) return 400;
+    //   //   if (trust < 100) return 923;
+    //   //   if (trust >= 100) return 125;
+    //   // }
+    //   return e + 1;
+    // };
+    console.log(currentPlace);
+    // 중분류 script가 끝났다면
+    if (currentPlace[1] > 5) {
+      //만약 중분류가 아니라면(5은 대분류 갯수)
+      if (5 < currentPlace[1] && currentPlace[1] < 11) {
+        console.log(currentPlace);
+        // 중분류 선택지를 보여주기
+        setCurrentPlace([true, 1]);
       }
-      if (e === 16) return 20;
-      if (e === 24) return 30;
-      // if (e > 11) {
-      //   if (trust < 50) return 400;
-      //   if (trust < 100) return 923;
-      //   if (trust >= 100) return 125;
-      // }
-      return e + 1;
-    };
-
+      if (10 < currentPlace[1] && currentPlace[1] < 16) {
+        setCurrentPlace([true, 2]);
+      }
+      if (15 < currentPlace[1] && currentPlace[1] < 21) {
+        setCurrentPlace([true, 3]);
+      }
+      if (20 < currentPlace[1] && currentPlace[1] < 26) {
+        setCurrentPlace([true, 4]);
+      }
+      if (25 < currentPlace[1] && currentPlace[1] < 31) {
+        setCurrentPlace([true, 5]);
+      }
+      setTypingE(true);
+      setScript(0);
+      setSpeech(0);
+      return null;
+    }
+    console.log(data.section[section].indexArr);
     // 해당 section(장소)를 모두 출력했는가? no면 다음 section로
     // const nextSection = data.section[section + 1];
     setCurrentPlace([true, currentPlace[1]]);
+    setTypingE(true);
     setScript(0);
     setSpeech(0);
 
     // if (nextSection) {
-    //   setTypingE(true);
-    //   setSection(0);
-    //   setScript(0);
-    //   setSpeech(0);
     //   // 기존 count 변경
     //   setCount((e) => scriptBranch(e));
     //   return null;
@@ -248,7 +272,29 @@ const SelectView = ({
       setData(jsonData);
     }
   }, [jsonData]);
-
+  const currentPlaceFunc = (e) => {
+    if (5 < e && e < 11) {
+      return 1;
+    }
+    if (10 < e && e < 16) {
+      return 2;
+    }
+    if (15 < e && e < 21) {
+      return 3;
+    }
+    if (20 < e && e < 26) {
+      return 4;
+    }
+    if (25 < e && e < 31) {
+      return 5;
+    }
+    console.log(e);
+    return e;
+  };
+  console.log(currentPlace);
+  console.log(data.section[section].indexArr);
+  console.log(placeArr);
+  console.log(placeArr[currentPlaceFunc(currentPlace[1])]);
   return (
     <Background place={place}>
       {/* 최대 7개 선택지 */}
@@ -276,9 +322,7 @@ const SelectView = ({
       {currentPlace[0] ? (
         <SelectFunc
           selectType={"place"}
-          selectData={
-            currentPlace[1] === 0 ? placeArr : selectData.selectOption
-          }
+          selectData={placeArr[currentPlaceFunc(currentPlace[1])]}
           setSelectData={(e) => setSelectData(e)}
           setSection={setSection}
           setCurrentPlace={(e) => setCurrentPlace(e)}
@@ -288,6 +332,7 @@ const SelectView = ({
           setRightImage={(e) => setRightImage(e)}
           setText={(e) => setText(e)}
           data={data}
+          indexArr={data.section[section].indexArr}
         />
       ) : null}
       {}

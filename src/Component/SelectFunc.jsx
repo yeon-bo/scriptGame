@@ -56,6 +56,7 @@ const SelectFunc = ({
   setPresent,
   setHidden,
   data,
+  indexArr,
   setCurrentPlace,
   setSection,
   setPlace,
@@ -99,13 +100,21 @@ const SelectFunc = ({
                 key={index}
                 onClick={() => {
                   setSelectData(null);
-                  setSection(index + 1);
-                  setCurrentPlace([false, index + 1]);
-                  setPlace(data.section[index + 1].placeImage);
-                  setCharacter(data.section[index + 1].script[0].character);
-                  setLeftImage(data.section[index + 1].script[0].leftImage);
-                  setRightImage(data.section[index + 1].script[0].rightImage);
-                  setText(data.section[index + 1].script[0].speech[0]);
+                  setSection(index + indexArr + 1);
+                  setCurrentPlace([false, index + indexArr + 1]);
+                  setPlace(data.section[index + indexArr + 1].placeImage);
+                  setCharacter(
+                    data.section[index + indexArr + 1].script[0].character
+                  );
+                  setLeftImage(
+                    data.section[index + indexArr + 1].script[0].leftImage
+                  );
+                  setRightImage(
+                    data.section[index + indexArr + 1].script[0].rightImage
+                  );
+                  setText(
+                    data.section[index + indexArr + 1].script[0].speech[0]
+                  );
                 }}
               >
                 {e}

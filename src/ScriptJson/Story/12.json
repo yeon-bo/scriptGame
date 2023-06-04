@@ -12,7 +12,7 @@
           "leftImage": "hue",
           "rightImage": null,
           "count": 3,
-          "speech": ["우와 카르프, 눈이 와요!", "…", "대답이 없네요."]
+          "speech": ["카르프, 눈이 와요!", "…", "대답이 없네요."]
         },
         {
           "type": "word",

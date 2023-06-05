@@ -64,7 +64,7 @@ const NameBox = styled.div`
   justify-content: center;
   align-items: center;
   top: 0;
-  background-color: yellow;
+  background-color: #000;
   transform: translateY(-50%);
   width: 20%;
   min-width: 250px;
@@ -72,6 +72,7 @@ const NameBox = styled.div`
 `;
 
 const NameText = styled.span`
+  color: #fff;
   font-size: 1.5em;
   font-weight: bold;
 `;
@@ -106,7 +107,7 @@ const MainView = ({
   const [scriptType, setScriptType] = useState(["word"]);
   // 선택지 데이터
   const [selectData, setSelectData] = useState([]);
-  const [selectBoolean, setSelectBoolean] = useState(null);
+  const [selectNum, setSelectNum] = useState(null);
   const [selectScript, setSelectScript] = useState(0);
   const [selectSpeech, setSelectSpeech] = useState(0);
   // 장소 section
@@ -143,7 +144,7 @@ const MainView = ({
         data,
         section,
         script,
-        selectBoolean,
+        selectNum,
         selectScript,
         selectSpeech,
         setTypingE,
@@ -153,7 +154,7 @@ const MainView = ({
         setText,
         setSelectSpeech,
         setSelectScript,
-        setSelectBoolean,
+        setSelectNum,
         setScript,
         setScriptType,
         setSpeech
@@ -221,8 +222,8 @@ const MainView = ({
           script={script}
           setScript={(e) => setScript(e)}
           setSpeech={(e) => setSpeech(e)}
-          selectBoolean={selectBoolean}
-          setSelectBoolean={(e) => setSelectBoolean(e)}
+          selectNum={selectNum}
+          setSelectNum={(e) => setSelectNum(e)}
           setTrust={setTrust}
           setConfidence={setConfidence}
           setItem={setItem}
@@ -246,12 +247,12 @@ const MainView = ({
             if (typingE) {
               setTypingE(!typingE);
             } else {
-              selectBoolean
+              selectNum
                 ? SelectClick(
                     data,
                     section,
                     script,
-                    selectBoolean,
+                    selectNum,
                     selectScript,
                     selectSpeech,
                     setTypingE,
@@ -261,7 +262,7 @@ const MainView = ({
                     setText,
                     setSelectSpeech,
                     setSelectScript,
-                    setSelectBoolean,
+                    setSelectNum,
                     setScript,
                     setScriptType,
                     setSpeech

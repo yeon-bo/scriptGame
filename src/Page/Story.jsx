@@ -4,7 +4,7 @@ import { atom, useAtom } from "jotai";
 import { MainView, MusicBox, SelectView } from "../Component";
 const jsonData10 = require("../ScriptJson/Story/10.json");
 const jsonData11 = require("../ScriptJson/Story/11.json");
-// const jsonData12 = require("../ScriptJson/Story/12.json");
+const jsonData12 = require("../ScriptJson/Story/12.json");
 
 const DataSwitch = (num) => {
   switch (num) {
@@ -12,8 +12,8 @@ const DataSwitch = (num) => {
       return jsonData10;
     case 11:
       return jsonData11;
-    // case 12:
-    //   return jsonData12;
+    case 12:
+      return jsonData12;
     // case 13:
     //   return jsonData13;
     // case 14:

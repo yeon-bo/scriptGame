@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import styled from "@emotion/styled";
 import { SelectFunc, TypingEffect } from "./index";
-import { SelectClick } from "../Util/index";
+// import { SelectClick } from "../Util/index";
 
 const Background = styled.div`
   background-image: ${(props) => `url("img/background/${props.place}.jpg")`};
@@ -61,7 +61,7 @@ const NameBox = styled.div`
   justify-content: center;
   align-items: center;
   top: 0;
-  background-color: yellow;
+  background-color: #000;
   transform: translateY(-50%);
   width: 20%;
   min-width: 250px;
@@ -69,7 +69,31 @@ const NameBox = styled.div`
 `;
 
 const NameText = styled.span`
+  color: #fff;
   font-size: 1.5em;
+  font-weight: bold;
+`;
+
+const EndBox = styled.div`
+  position: absolute;
+  right: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  background-color: red;
+  transform: translateY(-50%);
+  width: 7%;
+  height: 7vh;
+  border-radius: 30px;
+  word-break: keep-all;
+  text-align: center;
+  cursor: pointer;
+`;
+
+const NEndText = styled.span`
+  color: #fff;
+  font-size: 1.2em;
   font-weight: bold;
 `;
 
@@ -103,7 +127,7 @@ const SelectView = ({
   const [scriptType, setScriptType] = useState(["word"]);
   // 선택지 데이터
   const [selectData, setSelectData] = useState([]);
-  const [selectBoolean, setSelectBoolean] = useState(null);
+  const [selectNum, setSelectNum] = useState(null);
   const [selectScript, setSelectScript] = useState(0);
   const [selectSpeech, setSelectSpeech] = useState(0);
   // 백그라운드 타입
@@ -132,23 +156,12 @@ const SelectView = ({
   );
 
   const sectionType = "story";
-  // console.log(selectBoolean, selectScript, selectSpeech, currentPlace);
   const ScriptClick = () => {
     const currentSection = data.section[section];
     if (!currentSection) return null;
 
     const currentScript = currentSection.script[script];
     if (!currentScript) return null;
-
-    // if (currentPlace[1] > 0) {
-    //   console.log("selectView");
-    //   setPlace(data.section[currentPlace[1]].placeImage);
-    //   setCharacter(data.section[currentPlace[1]].script[0].character);
-    //   setLeftImage(data.section[currentPlace[1]].script[0].leftImage);
-    //   setRightImage(data.section[currentPlace[1]].script[0].rightImage);
-    //   setText(data.section[currentPlace[1]].script[0].speech[0]);
-    //   return null;
-    // }
 
     const nextScript = currentSection.script[script + 1];
 
@@ -168,7 +181,6 @@ const SelectView = ({
         return null;
       }
 
-      console.log(currentPlace);
       setTypingE(true);
       if (sectionType === "story") setScriptType(["word"]);
       setCharacter(nextScript.character);
@@ -180,26 +192,10 @@ const SelectView = ({
       return null;
     }
 
-    // const scriptBranch = (e) => {
-    //   if (sectionType === "ending" && e > 50) {
-    //     localStorage.removeItem("count");
-    //     window.location.href = "/main";
-    //   }
-    //   if (e === 16) return 20;
-    //   if (e === 24) return 30;
-    //   // if (e > 11) {
-    //   //   if (trust < 50) return 400;
-    //   //   if (trust < 100) return 923;
-    //   //   if (trust >= 100) return 125;
-    //   // }
-    //   return e + 1;
-    // };
-    console.log(currentPlace);
     // 중분류 script가 끝났다면
     if (currentPlace[1] > 5) {
       //만약 중분류가 아니라면(5은 대분류 갯수)
       if (5 < currentPlace[1] && currentPlace[1] < 11) {
-        console.log(currentPlace);
         // 중분류 선택지를 보여주기
         setCurrentPlace([true, 1]);
       }
@@ -220,19 +216,90 @@ const SelectView = ({
       setSpeech(0);
       return null;
     }
-    console.log(data.section[section].indexArr);
+
     // 해당 section(장소)를 모두 출력했는가? no면 다음 section로
-    // const nextSection = data.section[section + 1];
     setCurrentPlace([true, currentPlace[1]]);
     setTypingE(true);
     setScript(0);
     setSpeech(0);
+  };
 
-    // if (nextSection) {
-    //   // 기존 count 변경
-    //   setCount((e) => scriptBranch(e));
-    //   return null;
-    // }
+  const SelectClick = () => {
+    const currentScriptSelect =
+      data.section[section].script[script].selectOption[selectNum - 1].script[
+        selectScript
+      ];
+    if (!currentScriptSelect) return null;
+
+    // 해당 speech(대사)를 모두 출력했는가? no면 다음 speech로
+    if (currentScriptSelect.speech.length !== selectSpeech) {
+      setTypingE(true);
+      setCharacter(currentScriptSelect.character);
+      setLeftImage(currentScriptSelect.leftImage);
+      setRightImage(currentScriptSelect.rightImage);
+      setText(currentScriptSelect.speech[selectSpeech]);
+      setSelectSpeech(selectSpeech + 1);
+
+      if (selectScript === 0 && selectSpeech === 0) {
+        setText(currentScriptSelect.speech[0]);
+        setSelectSpeech(1);
+      }
+      return null;
+    }
+
+    const nextScriptSelect =
+      data.section[section].script[script].selectOption[selectNum - 1].script[
+        selectScript + 1
+      ];
+
+    const nextScript = data.section[section].script[script + 1];
+
+    // 해당 script(캐릭터대사)를 모두 출력했는가? no면 다음 script로
+    if (nextScriptSelect) {
+      setTypingE(true);
+      setCharacter(nextScriptSelect.character);
+      setLeftImage(nextScriptSelect.leftImage);
+      setRightImage(nextScriptSelect.rightImage);
+      setSelectScript(selectScript + 1);
+      setText(nextScriptSelect.speech[0]);
+      setSelectSpeech(1);
+      return null;
+    } else {
+      setTypingE(true);
+      setSelectNum(null);
+      setSelectScript(0);
+      setSelectSpeech(0);
+      setScript(script + 1);
+      setTypingE(true);
+      setScriptType(["word"]);
+      setCharacter(nextScript.character);
+      setLeftImage(nextScript.leftImage);
+      setRightImage(nextScript.rightImage);
+      setScript(script + 1);
+      setText(nextScript.speech[0]);
+      setSpeech(0);
+      return null;
+    }
+  };
+
+  const endBtn = () => {
+    const scriptBranch = (e) => {
+      if (sectionType === "ending" && e > 50) {
+        localStorage.removeItem("count");
+        window.location.href = "/main";
+      }
+      if (e === 16) return 20;
+      if (e === 24) return 30;
+      // if (e > 11) {
+      //   if (trust < 50) return 400;
+      //   if (trust < 100) return 923;
+      //   if (trust >= 100) return 125;
+      // }
+      return e + 1;
+    };
+    // 기존 count 변경
+    setCount((e) => scriptBranch(e));
+    return null;
   };
 
   // select
@@ -242,7 +309,7 @@ const SelectView = ({
         data,
         section,
         script,
-        selectBoolean,
+        selectNum,
         selectScript,
         selectSpeech,
         setTypingE,
@@ -252,7 +319,7 @@ const SelectView = ({
         setText,
         setSelectSpeech,
         setSelectScript,
-        setSelectBoolean,
+        setSelectNum,
         setScript,
         setScriptType,
         setSpeech
@@ -272,6 +339,7 @@ const SelectView = ({
       setData(jsonData);
     }
   }, [jsonData]);
+
   const currentPlaceFunc = (e) => {
     if (5 < e && e < 11) {
       return 1;
@@ -291,10 +359,7 @@ const SelectView = ({
     console.log(e);
     return e;
   };
-  console.log(currentPlace);
-  console.log(data.section[section].indexArr);
-  console.log(placeArr);
-  console.log(placeArr[currentPlaceFunc(currentPlace[1])]);
+
   return (
     <Background place={place}>
       {/* 최대 7개 선택지 */}
@@ -309,8 +374,8 @@ const SelectView = ({
           script={script}
           setScript={(e) => setScript(e)}
           setSpeech={(e) => setSpeech(e)}
-          selectBoolean={selectBoolean}
-          setSelectBoolean={(e) => setSelectBoolean(e)}
+          selectNum={selectNum}
+          setSelectNum={(e) => setSelectNum(e)}
           setTrust={setTrust}
           setConfidence={setConfidence}
           setItem={setItem}
@@ -351,27 +416,7 @@ const SelectView = ({
           if (typingE) {
             setTypingE(!typingE);
           } else {
-            selectBoolean
-              ? SelectClick(
-                  data,
-                  section,
-                  script,
-                  selectBoolean,
-                  selectScript,
-                  selectSpeech,
-                  setTypingE,
-                  setCharacter,
-                  setLeftImage,
-                  setRightImage,
-                  setText,
-                  setSelectSpeech,
-                  setSelectScript,
-                  setSelectBoolean,
-                  setScript,
-                  setScriptType,
-                  setSpeech
-                )
-              : ScriptClick();
+            selectNum ? SelectClick() : ScriptClick();
           }
         }}
       >
@@ -380,6 +425,9 @@ const SelectView = ({
             {character && character !== "" ? character : null}
           </NameText>
         </NameBox>
+        <EndBox>
+          <NEndText onClick={() => endBtn()}>탐사 끝내기</NEndText>
+        </EndBox>
         <ScriptText>
           {text && typingE ? (
             <TypingEffect
@@ -392,7 +440,6 @@ const SelectView = ({
           )}
         </ScriptText>
       </ScriptBox>
-      {/* )} */}
     </Background>
   );
 };

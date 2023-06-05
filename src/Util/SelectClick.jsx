@@ -2,7 +2,7 @@ const SelectClick = (
   data,
   section,
   script,
-  selectBoolean,
+  selectNum,
   selectScript,
   selectSpeech,
   setTypingE,
@@ -12,13 +12,13 @@ const SelectClick = (
   setText,
   setSelectSpeech,
   setSelectScript,
-  setSelectBoolean,
+  setSelectNum,
   setScript,
   setScriptType,
   setSpeech
 ) => {
   const currentScriptSelect =
-    data.section[section].script[script].selectOption[selectBoolean - 1].script[
+    data.section[section].script[script].selectOption[selectNum - 1].script[
       selectScript
     ];
   if (!currentScriptSelect) return null;
@@ -40,7 +40,7 @@ const SelectClick = (
   }
 
   const nextScriptSelect =
-    data.section[section].script[script].selectOption[selectBoolean - 1].script[
+    data.section[section].script[script].selectOption[selectNum - 1].script[
       selectScript + 1
     ];
   const nextScript = data.section[section].script[script + 1];
@@ -56,7 +56,9 @@ const SelectClick = (
     return null;
   } else {
     setTypingE(true);
-    setSelectBoolean(null);
+    setSelectNum(null);
+    setSelectScript(0);
+    setSelectSpeech(0);
     setScript(script + 1);
     setTypingE(true);
     setScriptType(["word"]);

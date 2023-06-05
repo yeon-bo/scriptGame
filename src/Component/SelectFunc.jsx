@@ -47,8 +47,8 @@ const SelectFunc = ({
   script,
   setScript,
   setSpeech,
-  selectBoolean,
-  setSelectBoolean,
+  selectNum,
+  setSelectNum,
   setTrust,
   setConfidence,
   setItem,
@@ -78,7 +78,7 @@ const SelectFunc = ({
                   setScriptType(["select", false]);
                   setScript(script + 1);
                   setSpeech(0);
-                  setSelectBoolean(index + 1);
+                  setSelectNum(index + 1);
                   setTrust((prev) => prev + e.trust);
                   setConfidence((prev) => prev + e.confidence);
                   setItem((prev) => prev + e.item);
@@ -120,32 +120,7 @@ const SelectFunc = ({
                 {e}
               </SelectBox>
             ))}
-          </SelectBoxCont>
-        );
-      case "00":
-        return (
-          <SelectBoxCont>
-            {selectData.map((e, index) => (
-              <SelectBox
-                key={index}
-                onClick={() => {
-                  setSelectData(null);
-                  setScriptType(["select", false]);
-                  setScript(script + 1);
-                  setSpeech(0);
-                  setSelectBoolean(index + 1);
-                  setTrust((prev) => prev + e.trust);
-                  setConfidence((prev) => prev + e.confidence);
-                  setItem((prev) => prev + e.item);
-                  setSelectDance(() => e.selectDance);
-                  setPresent((prev) => [...prev, e.present]);
-                  setHidden(() => e.hidden);
-                }}
-              >
-                {e.option}
-              </SelectBox>
-            ))}
-            {
+            {indexArr === 0 ? null : (
               <SelectBox
                 onClick={() => {
                   setSelectData(null);
@@ -160,7 +135,7 @@ const SelectFunc = ({
               >
                 나가기
               </SelectBox>
-            }
+            )}
           </SelectBoxCont>
         );
       default:

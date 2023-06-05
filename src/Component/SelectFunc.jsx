@@ -57,6 +57,7 @@ const SelectFunc = ({
   setHidden,
   data,
   indexArr,
+  selectedSet,
   setCurrentPlace,
   setSection,
   setPlace,
@@ -104,7 +105,9 @@ const SelectFunc = ({
                   setCurrentPlace([false, index + indexArr + 1]);
                   setPlace(data.section[index + indexArr + 1].placeImage);
                   setCharacter(
-                    data.section[index + indexArr + 1].script[0].character
+                    !selectedSet.has(index + indexArr + 1)
+                      ? data.section[index + indexArr + 1].script[0].character
+                      : "휴"
                   );
                   setLeftImage(
                     data.section[index + indexArr + 1].script[0].leftImage
@@ -113,7 +116,9 @@ const SelectFunc = ({
                     data.section[index + indexArr + 1].script[0].rightImage
                   );
                   setText(
-                    data.section[index + indexArr + 1].script[0].speech[0]
+                    !selectedSet.has(index + indexArr + 1)
+                      ? data.section[index + indexArr + 1].script[0].speech[0]
+                      : "여긴 살펴본 것 같다."
                   );
                 }}
               >

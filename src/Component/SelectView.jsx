@@ -132,6 +132,7 @@ const SelectView = ({
   const [selectSpeech, setSelectSpeech] = useState(0);
   // 백그라운드 타입
   const [placeArr] = useState(data.placeArr);
+  const [selectedSet, setSelectedSet] = useState(new Set());
   const [currentPlace, setCurrentPlace] = useState([false, 0]);
   // 장소 section
   const [section, setSection] = useState(0);
@@ -157,39 +158,41 @@ const SelectView = ({
 
   const sectionType = "story";
   const ScriptClick = () => {
-    const currentSection = data.section[section];
-    if (!currentSection) return null;
+    if (!selectedSet.has(currentPlace[1])) {
+      const currentSection = data.section[section];
+      if (!currentSection) return null;
 
-    const currentScript = currentSection.script[script];
-    if (!currentScript) return null;
+      const currentScript = currentSection.script[script];
+      if (!currentScript) return null;
 
-    const nextScript = currentSection.script[script + 1];
+      const nextScript = currentSection.script[script + 1];
 
-    // 해당 speech(대사)를 모두 출력했는가? no면 다음 speech로
-    if (currentScript.speech.length !== speech + 1) {
-      setTypingE(true);
-      setText(currentScript.speech[speech + 1]);
-      setSpeech(speech + 1);
-      return null;
-    }
-
-    // 해당 script(캐릭터대사)를 모두 출력했는가? no면 다음 script로
-    if (nextScript) {
-      if (nextScript.type === "select") {
-        setScriptType(["select", true]);
-        setSelectData(nextScript);
+      // 해당 speech(대사)를 모두 출력했는가? no면 다음 speech로
+      if (currentScript.speech.length !== speech + 1) {
+        setTypingE(true);
+        setText(currentScript.speech[speech + 1]);
+        setSpeech(speech + 1);
         return null;
       }
 
-      setTypingE(true);
-      if (sectionType === "story") setScriptType(["word"]);
-      setCharacter(nextScript.character);
-      setLeftImage(nextScript.leftImage);
-      setRightImage(nextScript.rightImage);
-      setScript(script + 1);
-      setText(nextScript.speech[0]);
-      setSpeech(0);
-      return null;
+      // 해당 script(캐릭터대사)를 모두 출력했는가? no면 다음 script로
+      if (nextScript) {
+        if (nextScript.type === "select") {
+          setScriptType(["select", true]);
+          setSelectData(nextScript);
+          return null;
+        }
+
+        setTypingE(true);
+        if (sectionType === "story") setScriptType(["word"]);
+        setCharacter(nextScript.character);
+        setLeftImage(nextScript.leftImage);
+        setRightImage(nextScript.rightImage);
+        setScript(script + 1);
+        setText(nextScript.speech[0]);
+        setSpeech(0);
+        return null;
+      }
     }
 
     // 중분류 script가 끝났다면
@@ -214,6 +217,7 @@ const SelectView = ({
       setTypingE(true);
       setScript(0);
       setSpeech(0);
+      setSelectedSet((prevSet) => new Set([...prevSet, currentPlace[1]]));
       return null;
     }
 
@@ -356,7 +360,6 @@ const SelectView = ({
     if (25 < e && e < 31) {
       return 5;
     }
-    console.log(e);
     return e;
   };
 
@@ -398,6 +401,7 @@ const SelectView = ({
           setText={(e) => setText(e)}
           data={data}
           indexArr={data.section[section].indexArr}
+          selectedSet={selectedSet}
         />
       ) : null}
       {}

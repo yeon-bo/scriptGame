@@ -1,6 +1,6 @@
 {
   "fileName": "story1",
-  "count": 4,
+  "count": 3,
   "section": [
     {
       "type": "illustration",
@@ -12,166 +12,13 @@
           "leftImage": null,
           "rightImage": null,
           "count": 0,
-          "speech": ["…"]
-        }
-      ]
-    },
-    {
-      "type": "nomal",
-      "placeImage": "sea",
-      "script": [
-        {
-          "type": "word",
-          "character": "휴",
-          "leftImage": "hue",
-          "rightImage": null,
-          "count": 3,
-          "speech": ["우와 카르프, 눈이 와요!", "…", "대답이 없네요."]
-        },
-        {
-          "type": "word",
-          "character": "카르프",
-          "leftImage": "hue",
-          "rightImage": "karf",
-          "count": 2,
-          "speech": ["등장", "…"]
-        },
-        {
-          "type": "select",
-          "count": 1,
-          "speech": [],
-          "selectOption": [
-            {
-              "option": "선택1",
-              "trust": 0,
-              "confidence": 3,
-              "item": 0,
-              "selectDance": null,
-              "present": "책",
-              "hidden": null,
-              "ending": null,
-              "script": [
-                {
-                  "type": "word",
-                  "character": "휴",
-                  "leftImage": "hue",
-                  "rightImage": null,
-                  "count": 3,
-                  "speech": ["1", "2", "3"]
-                },
-                {
-                  "type": "word",
-                  "character": "카르프",
-                  "leftImage": null,
-                  "rightImage": "karf",
-                  "count": 2,
-                  "speech": ["4", "5"]
-                },
-                {
-                  "type": "word",
-                  "character": "휴",
-                  "leftImage": "hue",
-                  "rightImage": "karf",
-                  "count": 1,
-                  "speech": ["!"]
-                }
-              ]
-            },
-            {
-              "option": "선택2",
-              "trust": 0,
-              "confidence": 0,
-              "item": 50,
-              "selectDance": null,
-              "present": "꽃",
-              "hidden": null,
-              "ending": null,
-              "script": [
-                {
-                  "type": "word",
-                  "character": "휴",
-                  "leftImage": "hue",
-                  "rightImage": null,
-                  "count": 2,
-                  "speech": ["두번째", "선택지"]
-                },
-                {
-                  "type": "word",
-                  "character": "카르프",
-                  "leftImage": "hue",
-                  "rightImage": "karf",
-                  "count": 2,
-                  "speech": ["성공", "!"]
-                }
-              ]
-            },
-            {
-              "option": "선택3",
-              "trust": 0,
-              "confidence": 5,
-              "item": 100,
-              "selectDance": null,
-              "present": "펜",
-              "hidden": null,
-              "ending": null,
-              "script": [
-                {
-                  "type": "word",
-                  "character": "휴",
-                  "leftImage": "hue",
-                  "rightImage": null,
-                  "count": 3,
-                  "speech": ["나", "진짜", "힘들었다"]
-                },
-                {
-                  "type": "word",
-                  "character": "카르프",
-                  "leftImage": null,
-                  "rightImage": "karf",
-                  "count": 2,
-                  "speech": ["ㅠㅠ", "나도"]
-                },
-                {
-                  "type": "word",
-                  "character": "휴",
-                  "leftImage": "hue",
-                  "rightImage": "karf",
-                  "count": 1,
-                  "speech": ["이제 끝이다"]
-                },
-                {
-                  "type": "word",
-                  "character": "카르프",
-                  "leftImage": null,
-                  "rightImage": "karf",
-                  "count": 2,
-                  "speech": ["와아", "아..."]
-                },
-                {
-                  "type": "word",
-                  "character": "휴",
-                  "leftImage": "hue",
-                  "rightImage": "karf",
-                  "count": 1,
-                  "speech": ["뻥이야"]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "word",
-          "character": "카르프",
-          "leftImage": null,
-          "rightImage": "karf",
-          "count": 1,
-          "speech": ["슬프네"]
+          "speech": [" "]
         }
       ]
     },
     {
       "type": "illustration",
-      "placeImage": "01",
+      "placeImage": "02",
       "script": [
         {
           "type": "word",
@@ -179,37 +26,962 @@
           "leftImage": null,
           "rightImage": null,
           "count": 0,
-          "speech": ["…"]
+          "speech": [" "]
         }
       ]
     },
     {
       "type": "nomal",
-      "placeImage": "forest",
+      "placeImage": "house",
       "script": [
         {
           "type": "word",
           "character": "휴",
           "leftImage": "hue",
           "rightImage": null,
-          "count": 3,
-          "speech": ["우와 카르프, 눈이 와요!", "…", "대답이 없네요."]
+          "count": 5,
+          "speech": [
+            "우와, 카르프 나와보세요! 눈이 내려요!",
+            "요즘 날이 따스했었던 것 같았는데 다시 추워졌나봐요.",
+            "이렇게 잔뜩 내리는건 처음 봐요.",
+            "지금까지 봤던 것 중에서 가장 펑펑 내리고 있어요. 바깥이 온통 새하얀 양피지 같아요!",
+            "어서 나와보세요 카르프!"
+          ]
         },
         {
           "type": "word",
-          "character": "카르프",
-          "leftImage": "hue",
-          "rightImage": "karf",
-          "count": 2,
-          "speech": ["등장", "…"]
+          "character": " ",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 1,
+          "speech": ["..."]
         },
         {
           "type": "word",
           "character": "휴",
           "leftImage": "hue",
-          "rightImage": "karf",
+          "rightImage": null,
+          "count": 12,
+          "speech": [
+            "카르프?",
+            "...",
+            "대답이 없네요.",
+            "(카르프가 요즘들어 방에서 나오지 않고 있어요.)",
+            "(벌써 삼일째 얼굴도 보지 못했어요. 같은 집에 있는데도요..!)",
+            "(마지막으로 봤던 카르프의 모습이 많이 초췌해 보여서 걱정스러워요...)",
+            "(정말이지 저보다 창백해 보였다니까요. 카르프는 살아있는데도 말이예요.)",
+            "(겨울이라 추워서 그런걸까요? 아니면 요새 음식을 잘 안먹던 것 같던데 그때문일까요?.)",
+            "(잘 있는지 보고싶지만 카르프의 방에 함부로들어가면 미움받을지도 몰라요.)",
+            "(카르프에게 미움받는 것 만큼 무서운건 없을거예요.)",
+            "카르프...",
+            "(어서 기운을 차려서 예전처럼 마주보며 이야기하고 싶어요.)"
+          ]
+        },
+        {
+          "type": "word",
+          "character": "문",
+          "leftImage": null,
+          "rightImage": null,
           "count": 1,
-          "speech": ["!"]
+          "speech": ["똑똑"]
+        },
+        {
+          "type": "word",
+          "character": " 휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 1,
+          "speech": ["?"]
+        },
+        {
+          "type": "word",
+          "character": "문",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 1,
+          "speech": ["똑똑"]
+        },
+        {
+          "type": "word",
+          "character": " 휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 3,
+          "speech": ["...", "누구세요?", "(이 곳까지 방문할 사람은 분명…)"]
+        },
+        {
+          "type": "word",
+          "character": "",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 1,
+          "speech": ["끼익"]
+        }
+      ]
+    },
+    {
+      "type": "nomal",
+      "placeImage": "houseOut",
+      "script": [
+        {
+          "type": "word",
+          "character": "휠라",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 1,
+          "speech": ["안녕하세요 휴!"]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 1,
+          "speech": ["휠라!"]
+        },
+        {
+          "type": "word",
+          "character": "휠라",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 4,
+          "speech": [
+            "휴씨 오랫만이예요!",
+            "지난달이 저희 마지막으로 본거죠?",
+            "자주 불러주시지! 이러다 얼굴까먹겠어요!",
+            "그것보다 휴씨가 반겨준건 드문일인데 기쁘네요!"
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 3,
+          "speech": [
+            "하하, 오랜만이에요 반가워요",
+            "배달일로 온건가요?",
+            "어라, 이상하다 최근에 부탁한건 없을텐데..?"
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휠라",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 2,
+          "speech": ["후후.. 배달 아니예요.", "오늘은 개인적으로 온거거든요!"]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 1,
+          "speech": ["개인적으로요?"]
+        },
+        {
+          "type": "word",
+          "character": "휠라",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 2,
+          "speech": ["네!", "그러고보니 카르프씨는 안계신가요?"]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 3,
+          "speech": [
+            "…",
+            "카르프는 지금 자고 있어요.",
+            "방금전에 잠들어서 깨우기 힘들 것 같아요."
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휠라",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 4,
+          "speech": [
+            "지금 한낮 인데요?",
+            "..!",
+            "아 그래서 카르프씨는 항상 피곤해 보였던 거군요! 수면시간이 불규칙해서!",
+            "이래서 산 속이라고 집에만 있으면 안돼요. 나중에 카르프씨를 보면 한마디 해줘야겠어요!"
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 7,
+          "speech": [
+            "하하하",
+            "(정말 잔소리는 필요할지도 모르겠어요.)",
+            "그러고보니 휠라 개인적인 일이라면 무슨일인가요?",
+            "카르프가 필요한 일인가요?",
+            "(손님 응대는 처음인데 어떻게 해야하죠?)",
+            "(이럴 땐, 책에서는..)",
+            "안으로 들어올래요? 눈도 이렇게 내리는데 오는데 힘들었겠어요."
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휠라",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 3,
+          "speech": [
+            "괜찮아요. 근무중에 들린 것이라 오래 있을 순 없거든요!",
+            "이걸 전해주려고 왔죠.",
+            "짠!"
+          ]
+        },
+        {
+          "type": "word",
+          "character": "",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 1,
+          "speech": ["예쁜 포장지에 쌓여 있는 선물을 건내준다"]
+        },
+        {
+          "type": "word",
+          "character": "휠라",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 7,
+          "speech": [
+            "미리 메리 크리스마스~!",
+            "좀 이르지만 크리스마스 선물을 준비했어요!",
+            "둘은 맨날 여기서 나가질 않으니까 선물 주고 받을 사람 없을 것 같아서 준비했죠~ ",
+            "휴는 제 선물 준비 안했죠? ",
+            "예상하고 있었답니다. 섭섭해하지 않을테니 걱정마요!",
+            "물론 약간 삐지고, 약간 노려보고, 앞으로 약간 배송 실수도 하겠지만..!",
+            "괜찮아요! 전 쿨하니까요!"
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 4,
+          "speech": [
+            "와, 선물이요? 정말 고마워요!",
+            "…",
+            "음... 정말 미안해요 휠라.",
+            "크리스마스가 뭔가요?"
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휠라",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 2,
+          "speech": ["네??", "무슨 소리예요 휴? 크리스마스 몰라요?"]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 10,
+          "speech": [
+            "그게 그러니까…",
+            "(이런, 모르면 안되는 거였나 봐요.)",
+            "(어떻게 이야기해야 이상하지않게 대답할 수 있을까요?)",
+            "…",
+            "…전에 이야기 했다싶이,",
+            "제가 많이 아팠어요.",
+            "그러니까… 계속 아프다보니 바깥일에 많이 둔해요.",
+            "약간 부끄럽네요. ",
+            "선물 정말 고마워요. 휠라같은 친구가 있어서 너무 기뻐요.",
+            "저도 다음에 휠라 선물을 준비하고 있을께요."
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휠라",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 6,
+          "speech": [
+            "!",
+            "휴는 여기 요양 온거라 했었죠?",
+            "그래도 어떻게 모를 수가 있죠..?",
+            "라고 생각하지만… 그럴 수도 있는거겠죠!",
+            "지금은 몸 많이 괜찮아진거 맞죠?",
+            "이제부터 챙기면 되니까 못챙긴만큼의 배로 즐겁게 보내요!"
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 1,
+          "speech": ["네, 고마워요."]
+        },
+        {
+          "type": "word",
+          "character": "휠라",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 2,
+          "speech": [
+            "그렇담, 제가 크리스마스에 대해 알려줄까요?",
+            "아니, 제가 알려줄래요!",
+            "이 기회에 휴와 카르프를 마을로 내려오게해서 크리스마스를 즐기게 해줘야겠어요",
+            "저희 마을에서 크리스마스는 아주 특별한 행사라 홍보도 같이 해도 될까요!"
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 2,
+          "speech": [
+            "저야 고맙죠. 감사해요.",
+            "내려갈 수 있을지 확신할 수는 없지만..",
+            "설명은 환영이에요."
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휠라",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 8,
+          "speech": [
+            "혹시라는게 있잖아요? 히히 제말을 듣고 마을로 내려와주면 정말 기쁠거에요.",
+            "그러니까 오늘이 20일이니까 5일 뒤 12월 25일이 크리스마스에요!",
+            "음~ 의미적으로 말하자면 크리스마스는 매년 새해가 오기 일주일 전에 한해를 무사히 보낸 것을 기념하는 날이에요.",
+            "더 구체적으로 말하면 한 해를 마무리하고 다음 해를 맞이하는 날이죠.",
+            "잠깐, 크리스마스 지나고도 6일 정도 연말이 남았다고 생각하셨죠?",
+            "일주일은 휴식날이에요. 다음해 1일까지요.",
+            "뭔가 의미가 있었던 것 같은데 음.. 중요하지 않았는지 기억이 안나네요!",
+            "어쨋든 이런 특별한 날은 가만히 보낼 순 없잖아요?",
+            "그래서 가족들이나 연인, 친구들이랑 맛있는걸 먹거나 선물을 주고 받으며 특별한 날을 축하하는 파티를 하죠."
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 1,
+          "speech": ["파티요?"]
+        },
+        {
+          "type": "word",
+          "character": "휠라",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 5,
+          "speech": [
+            "네, 파티! 성대하고 큰 파티!",
+            "규모가 큰 파티를 열어서 여러사람이 모이기도 하지만 가족끼리만으로도 하기도해요.",
+            "소중한 사람들과 하는 편안하고 즐거운 파티 좋죠?",
+            "하지만!",
+            "저희 마을의 파티는 다르답니다. 저희 마을은 다른 마을보다 엄~~청 성대하게해요!."
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 1,
+          "speech": ["와아, 얼마나 성대하게 하는건가요?"]
+        },
+        {
+          "type": "word",
+          "character": "휠라",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 9,
+          "speech": [
+            "무려 광장에서 마을사람 모두 다같이 나와서 즐긴답니다!",
+            "주택가부터 광장까지 화려한 조명과 크리스마스를 기념하는 조형물!",
+            "모두가 배터질때까지 먹을 수 있고 마실 수 있는 맛있는 요리들!",
+            "넓은 광장에서 마을 사람들과 한 해동안 있었던 일들을 슬픔을 덜고 내년의 행복을 나누고!",
+            "심지어 요즘은 눈도 자주오니까 화이트 크리스마스가 될지도 몰라요!",
+            "큰 광장에서 다같이 왁자지껄하게 흰 눈과 함께 보내는 크리스마스라니, 말만 들어도 아름답지않나요.",
+            "상상만해도 기분이 좋아져요 당장 내일이라도 크리스마스가 되었으면 좋겠어요.",
+            "앗 사설이 길어지겠어요.",
+            "그러니까 즉, 크리스마스는 최고로 멋있고 모두가 행복해지는 굉장한 연말 파티에요!"
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 2,
+          "speech": [
+            "휠라가 말하는 것만 들어도 정말 행복해 보이는 파티인 것 같아요.",
+            "크리스마스는 굉장한 파티군요."
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휠라",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 4,
+          "speech": [
+            "그거예요!",
+            "휴도 크리스마스 파티를 즐겨요!",
+            "이렇게 알아버린 이상 즐길 수 밖에 없잖아요?!",
+            "즐기지 않으면 엄청난 손해라구요!"
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 1,
+          "speech": [
+            "하하, 말은 고맙지만 저는 몸이 너무 아파서요.",
+            "휠라가 말하는 마을 파티에 가기는 힘들 것 같아요."
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휠라",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 7,
+          "speech": [
+            "으윽.. 제 홍보가 실패했네요",
+            "휴 제 생각보다 쉽지않은 타입이였군요.",
+            "마을에 못온다는건 아쉽지만... 크리스마스는 즐겨야죠!",
+            "집에서라도 파티를 열어보는건 어때요?",
+            "휴는 크리스마스에 아마 여기서 나가지 않고 카르프와 둘이서 보내는거죠?",
+            "파티를 하는법, 제가 알려줄께요!",
+            "제 말대로만 한다면 완벽한 크리스마스를 보낼 수 있을거예요!"
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 1,
+          "speech": ["파티를 여는 법이요?"]
+        },
+        {
+          "type": "word",
+          "character": "휠라",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 5,
+          "speech": [
+            "파티는 소중한 사람과 있다는 것이 중요하죠!",
+            "자, 어때요 크리스마스 파티 즐기고 싶지않나요?",
+            "크리스마스라는 굉장한 날을 알아버렸는데 그냥 넘어갈건가요?",
+            "제 조언을 들어보실 생각없나요? 크리스마스는 모두가 행복해질 권리가 있는 날이에요!",
+            "파티 준비하다가 저희 마을 파티가 궁금해져서 슬쩍 내려왔으면 좋겠다는 사심으로 말하고있지만..!"
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 4,
+          "speech": [
+            "하하하.",
+            "(크리스마스는 모두가 행복해질 권리가 있는 날.)",
+            "휠라 말대로 알게된 이상 그냥 넘어갈 순 없겠네요.",
+            "파티는 어떻게 준비해야하는 건가요?"
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휠라",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 8,
+          "speech": [
+            "잘생각했어요! ",
+            "흠 어디보자.",
+            "먼저 해야할건, 집을 멋지게 꾸며야해요.",
+            "아니면 멋진 장소를 따로 준비하는 것도 좋아요!",
+            "눈에 보이는 것이 멋져야 기분도 같이 좋아지잖아요?",
+            "집을 크리스마스 분위기로.. 참, 이렇게 말하면 알 수가 없잖아? ",
+            "집 안 여기저기 장식로 꾸미고 나무를 가져와서 방울이나 리본을 달아야해요.",
+            "특히 붉은색이나 초록색의 장식으로 나무를 꾸며 놓는 게 크리스마스의 상징이니까 이걸 잘 쓰면 분위기가 물씬 날거에요!"
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 3,
+          "speech": [
+            "집에 꾸밀만한 장식이 있는지 찾아봐야겠어요.",
+            "멋진 장소는 힘들겠지만, 집을 꾸며보는건 자신있으니까 재미있을 것 같아요.",
+            "그리고 더 있나요?"
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휠라",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 5,
+          "speech": [
+            "이제 시작이죠!",
+            "특별한 날에는 맛있는 음식이 필수예요!",
+            "케이크랑 칠면조가 중요한데 음.. 물론 있으면 좋지만 힘들다면 그냥 맛있는 음식을 잔뜩 늘어놓아도 좋아요.",
+            "파티가 기니까 오래 먹어야할테니 메뉴를 다양하고 양도 많이 준비하는 것이 좋을거에요.",
+            "참, 탈이 나지 않도록 각별히 주의해야하는 것 잊지 말고요..!",
+            "제가 작년에 이것 때문에 크게 아플뻔 했거든요.."
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 3,
+          "speech": [
+            "…조언 고마워요. 조심히 해야겠어요.",
+            "맛있는 음식…",
+            "요리는 자신 없는데 이건 큰일이네요."
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휠라",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 1,
+          "speech": [
+            "요리는 정성만 보이면 되는거죠~ 할 수 있는 것까지만 해봐요."
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 2,
+          "speech": ["네 노력해봐야겠어요.", "(생각보다 준비할게 많네요.)"]
+        },
+        {
+          "type": "word",
+          "character": "휠라",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 4,
+          "speech": [
+            "장소랑 음식이랑…",
+            "아! 아까도 이야기했지만 선물을 주고 받는 것도 잊으면 안돼요!",
+            "보통 상대방이 좋아할만한 것을 선물하지만, 가끔 크리스마스 선물로 장난치는 사람들도 있어요.",
+            "물론 제 선물에는 장난치지 말고요..! 전 꽤 멋진 선물을 줬다구요?"
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 5,
+          "speech": [
+            "하하, 물론이에요.",
+            "저도 휠라 선물은 진지하게 선택할게요.",
+            "파티는 장소와 음식과 선물… 준비하려면 시간이 걸릴것 같네요..",
+            "그래도 열심히 준비하면 정말 재미있는 하루가 될 것 같아요.",
+            "고마워요 휠라."
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휠라",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 3,
+          "speech": [
+            "아직 준비할게 남아있어요 휴!",
+            "제일 중요한건 이거에요! ",
+            "소원을 비는 풍등!"
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 1,
+          "speech": ["소원을 비는 풍등?"]
+        },
+        {
+          "type": "word",
+          "character": "휠라",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 6,
+          "speech": [
+            "크리스마스가 되는 정각에 맞춰서 소원을 적은 풍등을 하늘로 높이 보내는거에요.",
+            "수 많은 풍등을 잔뜩 하늘로 올려보내면 얼마나 이쁜지..!",
+            "상상이 되시나요? 듣기만 해서는 모를거예요.",
+            "별을 올려보낸 다음날도 별이 가득차서 정말 예쁘지만 당일은 말로 이룰 수 없답니다!",
+            "이렇게 올려보낸 풍등이 별이 되어서 밤을 환하게 비춰준다고 해요. 소원을 들어줄 때까지요!",
+            "그리고 소원이 이뤄지면 별똥별로 떨어지죠.",
+            "밤하늘에 빛나는 별들이 모두 우리의 소원이라니 엄청 멋지지 않나요?"
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 2,
+          "speech": [
+            "와, 하늘의 별들이 모두 저희 소원이였군요.",
+            "재미있는 이야기에요 정말 멋지네요!"
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휠라",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 6,
+          "speech": [
+            "그쵸!",
+            "주신이 우리의 소원을 잊지 않도록 밤하늘에 기록하는거래요. 주신이 기록한만큼 소원은 언젠간 꼭 이뤄진다고해요.",
+            "물론, 나쁘거나 게으른 소원은 빼고요.",
+            "주신은 간절하고 어여쁜 소원을 우선적으로 보신다해요.",
+            "혹시라도 다음해가 되도록 이뤄지지 못했다면 다시 풍등을 올려 더 밝게 빛나는 별로 만들 수 있다해요.",
+            "크고 눈부신 별이라면 주신도 절대 지나칠 수 없는 소원이 되겠죠?"
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 3,
+          "speech": [
+            "(저를 만든건 카르프인데… 주신은 저의 소원도 들어줄까요?)",
+            "주신이 저의 소원도 들어주셨으면 좋겠네요.",
+            "혹시 휠라는 지금까지 소원이 이뤄졌나요?"
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휠라",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 6,
+          "speech": [
+            "저는 매년 소원을 들어주셨죠~",
+            "혹시 올해 여름에 큰 별똥별 떨어지는걸 보셨나요? 그게 올해 제 소원이 이뤄져서 내린거예요!",
+            "주신은 제 소원을 못 지나칠거예요 제가 매번 남들보다 큰 풍등을 올리거든요!",
+            "약간 편법이긴한데 휴도 정말 이루고싶은 소원이라면 가장 크고 밝은 풍등으로 올려보세요.",
+            "주신이 못지나칠만한 소원으로 만들어버리는거에요!",
+            "효과 아주 좋아요 추천합니다!"
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 1,
+          "speech": ["하하 좋아요 그렇게 해볼게요."]
+        },
+        {
+          "type": "word",
+          "character": "휠라",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 7,
+          "speech": [
+            "좋아요. 다시 말하지만  완벽하게 준비하지 않아도 괜찮으니 할 수 있는 것 까지만 해봐요.",
+            "…",
+            "하지만… 역시…",
+            "휴와 카르프에게 직접 크리스마스 파티를 보여주고 싶은데 안되겠죠..?",
+            "끈질기다 생각되시겠지만 역시 저희 마을 파티는 자랑하고 싶어요..!",
+            "마을에서 다같이 크리스마스를 보내는 거예요!",
+            "제가 말한 것들을 휴가 상상하지 못했을 정도로 멋있는 모습으로 보여줄 수 있다구요 휴..!"
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 5,
+          "speech": [
+            "마음은 고맙지만...",
+            "역시 미안해요.",
+            "지금 많이 괜찮아졌지만 아직 여전히 몸이 아파서요.",
+            "카르프의 의사도 중요하고...",
+            "그렇지만 카르프에게 꼭 가고싶다고 열심히 설득해 볼께요!"
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휠라",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 5,
+          "speech": [
+            "으아아 꼭 와주세요!",
+            "저희 전쟁 이후에 처음으로 맞이하는 큰 행사니까 사람들도 정말 단단히 준비했거든요.",
+            "광장에는 공연도 하고, 경연도 열리고, 노래 부르고, 할 것도 놀 것도 많아요.",
+            "제가 한말 기억해서 전부 그대로 카르프에게 꼭 전해주세요.",
+            "카르프는 열에 한 번은 마지못해 들어주니까 통할지도 몰라요..!"
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 2,
+          "speech": [
+            "꼭 카르프를 열심히 설득해볼께요!",
+            "광장에서 휠라를 꼭 만났으면 좋겠어요."
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휠라",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 4,
+          "speech": [
+            "좋아요. 저도 휴를 마을에서 봤으면 좋겠네요.",
+            "혹시 못오더라도 집에서 멋진 파티 보내고요!",
+            "무리하지 말고, 휴는 몸이 아프니까 못 오더라도 실망하지 않을 거에요.",
+            "끈질겼지만 제가 억지 부리고 있다는걸 알고는 있거든요."
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 2,
+          "speech": [
+            "휠라는 저에게 좋은 경험을 알려주려고 한거 알고 있어요.",
+            "고마워요. 휠라 덕분에 크리스마스도 알아가고 파티 만드는 법도 배웠어요."
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휠라",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 4,
+          "speech": [
+            "휴는 역시 상냥해요...",
+            "파티에 맛있는 장소, 음식, 선물, 풍등 잊지 마세요!",
+            "아참,",
+            "그리고 제일 중요한 하나가 더 있네요."
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 1,
+          "speech": ["준비해야할 것이 더 있나요..?"]
+        },
+        {
+          "type": "word",
+          "character": "휠라",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 7,
+          "speech": [
+            "하하 당황하셨군요",
+            "그건 바로바로~",
+            "주변에 소중한 사람들에게 고맙다고 감사의 인사 전하기!",
+            "음, 음.",
+            "항상 저희 펠러 우편을 이용해주셔서 감사합니다. 휴.",
+            "앞으로도 잘부탁드리고 오래오래 많~이 이용해주세요.",
+            "펠러 우편은 항상 고객님들께 최고의 서비스를 준비하겠습니다."
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 3,
+          "speech": [
+            "아하하",
+            "휠라도 항상 최고의 우편 감사해요.",
+            "앞으로도 잘 부탁드려요."
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휠라",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 3,
+          "speech": [
+            "완벽해요!",
+            "소중한 사람들에게 괜히 부끄러워서 평소에 감사의 인사는 하기 힘들잖아요.",
+            "이런 특별한날에 분위기의 힘을 빌려 이런 진심을 전하기 좋아요."
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 2,
+          "speech": ["…", "그렇네요."]
+        },
+        {
+          "type": "word",
+          "character": "휠라",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 4,
+          "speech": [
+            "히히 좋아요~",
+            "멋진 장소, 음식, 선물, 풍등, 그리고 감사의 인사까지!",
+            "이 다섯까지 꼭 모두 성공하길 바래요.",
+            "앗."
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 1,
+          "speech": ["?"]
+        },
+        {
+          "type": "word",
+          "character": "휠라",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 4,
+          "speech": [
+            "생각보다 오래 있어버렸네요! 진짜 선물만 주고 갈려했는데..!",
+            "전 이만 가볼게요!",
+            "정말정말 마지막으로 말하는거지만",
+            "만약에 마을에 내려와서 절 보면 아는척 꼭 하기에요!."
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 1,
+          "speech": ["물론이에요."]
+        },
+        {
+          "type": "word",
+          "character": "휠라",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 1,
+          "speech": [
+            "그럼 정말 마지막! 최종!으로 크리스마스를 행복한 크리스마스를 위한 마법의 주문을 알려줄께요!"
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 1,
+          "speech": ["하하하 네 좋아요."]
+        },
+        {
+          "type": "word",
+          "character": "휠라",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 4,
+          "speech": [
+            "메리 크리스마스~! 휴.",
+            "무사히 크리스마스 파티를 잘 보내길 바라요!"
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 1,
+          "speech": [
+            "!",
+            "하하, 휠라도 행복한 크리스마스가 되길 바래요.",
+            "메리 크리스마스."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "nomal",
+      "placeImage": "house",
+      "script": [
+        {
+          "type": "word",
+          "character": "",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 1,
+          "speech": ["끼익"]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 26,
+          "speech": [
+            "멋진 장소, 맛있는 음식, 필요한 선물, 커다란 풍등 그리고 감사 인사.",
+            "휠라 덕분에 즐거운 정보를 알았네요.",
+            "(카르프는 크리스마스를 알고 있었을까요?)",
+            "(알고 있었더라면 저에게 말해줘도 되었을텐데요.)",
+            "(…)",
+            "(생각해보니 이런 걸 알려준 적은 한번도 없었어요…)",
+            "(저번에 생일이란 것도 휠라에게 처음 들었었죠.)",
+            "(항상 연구와 실험으로만으로 바빠서 이런 기념일들을 깜박한걸까요?)",
+            "(저라도 챙기지 않으면 카르프는 계속 이런 특별한 날들을 지나쳐 버릴거예요.)",
+            "(크리스마스 파티를 준비 해야겠어요. 카르프 몰래 깜짝 파티로요!)",
+            "(아, 책에서 봤는데 그냥 파티보다 깜짝파티가 더 재밌어 보였거든요.)",
+            "(휠라가 말한 마을에서의 파티를 즐겨보고도 싶지만)",
+            "(제가 며칠동안 열심히 말을 해도 카르프는 저와 함께 마을을 내려가지 않을거에요.)",
+            "(항상 그랬으니까요.)",
+            "(그러니까 이번에는 크리스마스에 카르프를 깜짝 놀래키고 파티로 기쁘게 만든 다음,",
+            "(더 멋진 파티를 즐기기 위해 마을로 가자고 열심히 설득할거에요.)",
+            "(모든걸 한꺼번에 터트리면 평소에는 안될일도 가능할지도 몰라요.)",
+            "(마치 휠라가 카르프를 설득할 일이 있으면 세상에 모든 말을 와르르 쏟아내서 결국 쟁취하는 것처럼요!)",
+            "(멋진 본보기였어요 휠라. 역시 이 계획은 잘하면 성공할지도 모르겠어요.)",
+            "(그럼 먼저 휠라가 말한대로 파티를 준비해볼까요.)",
+            "(음.. 장소는 역시 집이 제일 좋겠네요.)",
+            "(역시 이 집 말고는 완벽한 장소를 찾기는 힘들 것 같아요.)",
+            "(문제는 장소를 멋지게 꾸미는 일인데…)",
+            "(저희 집에 꾸밀만한 재료가 충분한지 모르겠어요.)",
+            "(창고라던가 여기저기 찾아봐서 꾸밀 재료들을 찾아봐야할 것 같아요.",
+            "크리스마스의 상징이라던 붉은 리본이 있는지도 확인해 보고요.)"
+          ]
         }
       ]
     }

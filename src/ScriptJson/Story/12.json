@@ -176,6 +176,98 @@
           "rightImage": "karf",
           "count": 1,
           "speech": ["!"]
+        },
+
+        {
+          "type": "select",
+          "count": 1,
+          "speech": [],
+          "selectOption": [
+            {
+              "option": "선택1",
+              "trust": 0,
+              "confidence": 3,
+              "item": 0,
+              "selectDance": null,
+              "present": "책",
+              "hidden": null,
+              "ending": null,
+              "script": [
+                {
+                  "type": "word",
+                  "character": "휴",
+                  "leftImage": "hue",
+                  "rightImage": null,
+                  "count": 3,
+                  "speech": ["1", "2", "3"]
+                },
+                {
+                  "type": "word",
+                  "character": "카르프",
+                  "leftImage": null,
+                  "rightImage": "karf",
+                  "count": 2,
+                  "speech": ["4", "5"]
+                }
+              ]
+            },
+            {
+              "option": "선택2",
+              "trust": 0,
+              "confidence": 0,
+              "item": 50,
+              "selectDance": null,
+              "present": "꽃",
+              "hidden": null,
+              "ending": null,
+              "script": [
+                {
+                  "type": "word",
+                  "character": "휴",
+                  "leftImage": "hue",
+                  "rightImage": null,
+                  "count": 2,
+                  "speech": ["두번째", "선택지"]
+                },
+                {
+                  "type": "word",
+                  "character": "카르프",
+                  "leftImage": "hue",
+                  "rightImage": "karf",
+                  "count": 2,
+                  "speech": ["성공", "!"]
+                }
+              ]
+            },
+            {
+              "option": "선택3",
+              "trust": 0,
+              "confidence": 5,
+              "item": 100,
+              "selectDance": null,
+              "present": "펜",
+              "hidden": null,
+              "ending": null,
+              "script": [
+                {
+                  "type": "word",
+                  "character": "휴",
+                  "leftImage": "hue",
+                  "rightImage": null,
+                  "count": 3,
+                  "speech": ["나", "진짜", "힘들었다"]
+                },
+                {
+                  "type": "word",
+                  "character": "카르프",
+                  "leftImage": null,
+                  "rightImage": "karf",
+                  "count": 2,
+                  "speech": ["ㅠㅠ", "나도"]
+                }
+              ]
+            }
+          ]
         }
       ]
     }

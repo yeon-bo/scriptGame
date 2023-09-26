@@ -1,143 +1,40 @@
 {
-  "fileName": "story1",
-  "count": 2,
+  "fileName": "story5",
+  "count": 4,
   "section": [
     {
-      "place": "home",
-      "placeImage": "forest",
+      "type": "illustration",
+      "placeImage": "05",
       "script": [
+        {
+          "type": "word",
+          "character": null,
+          "leftImage": null,
+          "rightImage": null,
+          "count": 0,
+          "speech": [" "]
+        }
+      ]
+    },
+    {
+      "place": "home",
+      "placeImage": "house",
+      "script": [
+        {
+          "type": "word",
+          "character": "카르프",
+          "leftImage": null,
+          "rightImage": "karf",
+          "count": 1,
+          "speech": ["휴, 휴…!"]
+        },
         {
           "type": "word",
           "character": "휴",
           "leftImage": "hue",
           "rightImage": null,
-          "count": 3,
-          "speech": ["우와 카르프, 눈이 와요!", "…", "대답이 없네요."]
-        },
-        {
-          "type": "word",
-          "character": "카르프",
-          "leftImage": "hue",
-          "rightImage": "karf",
-          "count": 2,
-          "speech": ["등장", "…"]
-        },
-        {
-          "type": "select",
           "count": 1,
-          "speech": [],
-          "selectOption": [
-            {
-              "option": "선택1",
-              "trust": 1,
-              "Confidence": 0,
-              "item": "책",
-              "present": "",
-              "ending": null,
-              "script": [
-                {
-                  "type": "word",
-                  "character": "휴",
-                  "leftImage": "hue",
-                  "rightImage": null,
-                  "count": 3,
-                  "speech": ["1", "2", "3"]
-                },
-                {
-                  "type": "word",
-                  "character": "카르프",
-                  "leftImage": null,
-                  "rightImage": "karf",
-                  "count": 2,
-                  "speech": ["4", "5"]
-                },
-                {
-                  "type": "word",
-                  "character": "휴",
-                  "leftImage": "hue",
-                  "rightImage": "karf",
-                  "count": 1,
-                  "speech": ["!"]
-                }
-              ]
-            },
-            {
-              "option": "선택2",
-              "trust": 1,
-              "Confidence": 0,
-              "item": "",
-              "present": "",
-              "ending": null,
-              "script": [
-                {
-                  "type": "word",
-                  "character": "휴",
-                  "leftImage": "hue",
-                  "rightImage": null,
-                  "count": 2,
-                  "speech": ["두번째", "선택지"]
-                },
-                {
-                  "type": "word",
-                  "character": "카르프",
-                  "leftImage": "hue",
-                  "rightImage": "karf",
-                  "count": 2,
-                  "speech": ["성공", "!"]
-                }
-              ]
-            },
-            {
-              "option": "선택3",
-              "trust": 1,
-              "Confidence": 0,
-              "item": "책",
-              "present": "",
-              "ending": null,
-              "script": [
-                {
-                  "type": "word",
-                  "character": "휴",
-                  "leftImage": "hue",
-                  "rightImage": null,
-                  "count": 3,
-                  "speech": ["나", "진짜", "힘들었다"]
-                },
-                {
-                  "type": "word",
-                  "character": "카르프",
-                  "leftImage": null,
-                  "rightImage": "karf",
-                  "count": 2,
-                  "speech": ["ㅠㅠ", "나도"]
-                },
-                {
-                  "type": "word",
-                  "character": "휴",
-                  "leftImage": "hue",
-                  "rightImage": "karf",
-                  "count": 1,
-                  "speech": ["이제 끝이다"]
-                },
-                {
-                  "type": "word",
-                  "character": "카르프",
-                  "leftImage": null,
-                  "rightImage": "karf",
-                  "count": 2,
-                  "speech": ["와아", "아..."]
-                },
-                {
-                  "type": "word",
-                  "character": "휴",
-                  "leftImage": "hue",
-                  "rightImage": "karf",
-                  "count": 1,
-                  "speech": ["뻥이야"]
-                }
-              ]
-            }
-          ]
+          "speech": ["..."]
         },
         {
           "type": "word",
@@ -145,29 +42,23 @@
           "leftImage": null,
           "rightImage": "karf",
           "count": 1,
-          "speech": ["슬프네"]
-        }
-      ]
-    },
-    {
-      "place": "forest",
-      "placeImage": "sea",
-      "script": [
+          "speech": ["휴, 일어나."]
+        },
         {
           "type": "word",
           "character": "휴",
           "leftImage": "hue",
           "rightImage": null,
-          "count": 3,
-          "speech": ["우와 카르프, 눈이 와요!", "…", "대답이 없네요."]
+          "count": 1,
+          "speech": ["카르프..?"]
         },
         {
           "type": "word",
           "character": "카르프",
           "leftImage": "hue",
           "rightImage": "karf",
-          "count": 2,
-          "speech": ["등장", "…"]
+          "count": 1,
+          "speech": ["휴, 나 보여? 누군지 알겠어?"]
         },
         {
           "type": "word",
@@ -175,7 +66,290 @@
           "leftImage": "hue",
           "rightImage": "karf",
           "count": 1,
-          "speech": ["!"]
+          "speech": ["(끄덕)"]
+        },
+        {
+          "type": "word",
+          "character": "카르프",
+          "leftImage": "hue",
+          "rightImage": "karf",
+          "count": 1,
+          "speech": ["..!"]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": "karf",
+          "count": 1,
+          "speech": ["실험은 끝났나요 카르프?"]
+        },
+        {
+          "type": "word",
+          "character": "카르프",
+          "leftImage": "hue",
+          "rightImage": "karf",
+          "count": 1,
+          "speech": ["..."]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": "karf",
+          "count": 1,
+          "speech": ["왜 그런가요 카르프? 얼굴색이 점점 창백해져요."]
+        },
+        {
+          "type": "word",
+          "character": "카르프",
+          "leftImage": "hue",
+          "rightImage": "karf",
+          "count": 1,
+          "speech": ["...아냐, 아니야."]
+        }
+      ]
+    },
+    {
+      "type": "illustration",
+      "placeImage": "05-1",
+      "script": [
+        {
+          "type": "word",
+          "character": null,
+          "leftImage": null,
+          "rightImage": null,
+          "count": 0,
+          "speech": [" "]
+        }
+      ]
+    },
+    {
+      "place": "home",
+      "placeImage": "house",
+      "script": [
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": "karf",
+          "count": 1,
+          "speech": ["괜찮아요? 어디 아픈거에요?"]
+        },
+        {
+          "type": "word",
+          "character": "카르프",
+          "leftImage": "hue",
+          "rightImage": "karf",
+          "count": 1,
+          "speech": ["으으..."]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": "karf",
+          "count": 1,
+          "speech": ["카르프..."]
+        },
+        {
+          "type": "word",
+          "character": "카르프",
+          "leftImage": "hue",
+          "rightImage": "karf",
+          "count": 1,
+          "speech": ["휴, 휴 정말 기억안나? 옛날 기억 하나도…?"]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": "karf",
+          "count": 1,
+          "speech": ["..."]
+        },
+        {
+          "type": "word",
+          "character": "카르프",
+          "leftImage": "hue",
+          "rightImage": "karf",
+          "count": 1,
+          "speech": [
+            "왜, 왜 실패한거지? 이번에는 더 완벽하게 마무리까지 했는데…!"
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": "karf",
+          "count": 1,
+          "speech": ["..."]
+        },
+        {
+          "type": "word",
+          "character": "카르프",
+          "leftImage": "hue",
+          "rightImage": "karf",
+          "count": 1,
+          "speech": [
+            "모르겠어 어디가 잘못되었는지. 어디가 문제인건지. 무엇이 어긋난건지. 사소한거 하나도…!"
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": "karf",
+          "count": 1,
+          "speech": ["..."]
+        },
+        {
+          "type": "word",
+          "character": "카르프",
+          "leftImage": "hue",
+          "rightImage": "karf",
+          "count": 2,
+          "speech": [
+            "이제 뭘 손대야할지도 감이 잡히지 않아.",
+            "왜 실패한거지? 재료도 오랫동안 충분히 모아둔건데…!"
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": "karf",
+          "count": 2,
+          "speech": [
+            "카르프, 무척 피곤해보여요.",
+            "우선 한숨 쉬고 생각해보는게 좋을 것 같아요."
+          ]
+        },
+        {
+          "type": "word",
+          "character": "카르프",
+          "leftImage": "hue",
+          "rightImage": "karf",
+          "count": 1,
+          "speech": ["휴, 미안해. 미안해."]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": "karf",
+          "count": 1,
+          "speech": ["전 괜찮아요. 카르프."]
+        },
+        {
+          "type": "word",
+          "character": "카르프",
+          "leftImage": "hue",
+          "rightImage": "karf",
+          "count": 2,
+          "speech": [
+            "너를 이렇게 둘 순 없는데,",
+            "너와 같이 공부하고, 연구했는데 그 실험들이 왜 여기서 결과를 못 내는거지?"
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": "karf",
+          "count": 6,
+          "speech": [
+            "카르프…",
+            "(다시보니 카르프의 손이 숯처럼 새까맣게 변했어요.)",
+            "(원래도 약간 자국이 있었지만 이렇게까지는 아니였는데…)",
+            "(지금보니 목에도 검정이 보이네요. 온몸이 거희 검정색으로 된 것 같아요.)",
+            "(카르프의 검정은 얼마나 넓게 번진걸까요?)",
+            "카르프 목에… 앗"
+          ]
+        },
+        {
+          "type": "word",
+          "character": null,
+          "leftImage": null,
+          "rightImage": null,
+          "count": 1,
+          "speech": ["(휘청)"]
+        },
+        {
+          "type": "word",
+          "character": "카르프",
+          "leftImage": "hue",
+          "rightImage": "karf",
+          "count": 1,
+          "speech": ["휴, 일어나지마. 아직 마법이 남아있을거야."]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": "karf",
+          "count": 1,
+          "speech": ["으음… 네, 그런 것 같아요."]
+        },
+        {
+          "type": "word",
+          "character": "카르프",
+          "leftImage": "hue",
+          "rightImage": "karf",
+          "count": 2,
+          "speech": [
+            "미안, 좀 더 쉬고 있어.",
+            "난 마무리할게 있어서 더 있다 다시 올께."
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": "karf",
+          "count": 1,
+          "speech": ["무리하지말아요 카르프."]
+        },
+        {
+          "type": "word",
+          "character": "카르프",
+          "leftImage": "hue",
+          "rightImage": "karf",
+          "count": 1,
+          "speech": ["..."]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": "karf",
+          "count": 1,
+          "speech": [""]
+        },
+        {
+          "type": "word",
+          "character": "카르프",
+          "leftImage": "hue",
+          "rightImage": "karf",
+          "count": 1,
+          "speech": [""]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": "karf",
+          "count": 1,
+          "speech": [""]
+        },
+        {
+          "type": "word",
+          "character": "카르프",
+          "leftImage": "hue",
+          "rightImage": "karf",
+          "count": 1,
+          "speech": [""]
         }
       ]
     }

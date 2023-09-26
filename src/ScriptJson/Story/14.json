@@ -1,35 +1,36 @@
 {
-  "fileName": "story1",
+  "fileName": "story3",
   "count": 1,
   "section": [
     {
       "place": "home",
-      "placeImage": "sky",
-      "count": 3,
+      "placeImage": "house",
       "script": [
         {
           "type": "word",
-          "character": "카르프",
+          "character": "휴",
           "leftImage": "hue",
           "rightImage": null,
-          "count": 3,
-          "speech": ["제대로될까?", "ㅜㅜ", "제발"]
-        },
-        {
-          "type": "word",
-          "character": "카르프",
-          "leftImage": "hue",
-          "rightImage": "karf",
-          "count": 2,
-          "speech": ["등장", "…"]
+          "count": 1,
+          "speech": [
+            "휴",
+            "(휴, 안들켰겠죠?)",
+            "(카르프의 방에는 신기한 것이 많았어요.)",
+            "(무엇인지 모르겠는 것도 많이 있었고..)",
+            "(그것들은 뭐였을까요?)",
+            "(헉 문소리가 들려요)",
+            "(들키기 전에 카르프가 준 약을 먹고 누워있어야겠어요.)",
+            "(그럼, 카르프가 실험에 성공했으면 좋겠어요.)",
+            "(그래야…)"
+          ]
         },
         {
           "type": "word",
           "character": "휴",
           "leftImage": "hue",
-          "rightImage": "karf",
-          "count": 3,
-          "speech": ["...", "ㅜ", "ㅜㅜ.."]
+          "rightImage": null,
+          "count": 1,
+          "speech": ["실험전의 스몰토크 뭐하지"]
         }
       ]
     }

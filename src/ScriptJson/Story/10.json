@@ -83,7 +83,7 @@
           "leftImage": null,
           "rightImage": null,
           "count": 1,
-          "speech": ["똑똑"]
+          "speech": ["(똑똑)"]
         },
         {
           "type": "word",
@@ -99,7 +99,7 @@
           "leftImage": null,
           "rightImage": null,
           "count": 1,
-          "speech": ["똑똑"]
+          "speech": ["(똑똑)"]
         },
         {
           "type": "word",
@@ -115,7 +115,7 @@
           "leftImage": null,
           "rightImage": null,
           "count": 1,
-          "speech": ["끼익"]
+          "speech": ["(끼익)"]
         }
       ]
     },
@@ -962,7 +962,7 @@
           "leftImage": null,
           "rightImage": null,
           "count": 1,
-          "speech": ["끼익"]
+          "speech": ["(끼익)"]
         },
         {
           "type": "word",

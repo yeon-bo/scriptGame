@@ -1,18 +1,533 @@
 {
-  "fileName": "story1",
-  "count": 2,
+  "fileName": "house",
+  "count": 11,
+  "placeArr": [
+    ["부엌", "서재", "나의 방", "창고", "마당", "카르프의 방"],
+    ["식탁", "창문", "아궁이", "자루", "서랍", "식물"],
+    ["그림책", "누군가의 일기", "로맨스 소설", "전설구전 모음", "요리 레시피"],
+    ["침대", "종이 더미", "선반", "책장", "마른 꽃", "책상"],
+    ["오래된 물건 더미", "오래된 종이 더미", "공구 상자", "상자", "낡은 옷"],
+    ["화단", "지게", "눈", "울타리", "우물"],
+    ["노크 한다."]
+  ],
   "section": [
     {
-      "place": "home",
-      "placeImage": "sea",
+      "place": "house",
+      "placeImage": "house",
+      "indexArr": 0,
       "script": [
+        {
+          "type": "word",
+          "character": null,
+          "leftImage": null,
+          "rightImage": null,
+          "count": 2,
+          "speech": ["…"]
+        },
         {
           "type": "word",
           "character": "휴",
           "leftImage": "hue",
           "rightImage": null,
           "count": 3,
-          "speech": ["우와 카르프, 눈이 와요!", "…", "대답이 없네요."]
+          "speech": [
+            "카르프가 아직 나오지 않았어요.",
+            "서둘러서 집을 꼼꼼히 둘러봐야겠어요.",
+            "카르프에게 들키지 않도록이요!"
+          ]
+        }
+      ]
+    },
+    {
+      "place": "부엌",
+      "placeImage": "kitchen",
+      "indexArr": 1,
+      "script": [
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 1,
+          "speech": [
+            "여기서 파티음식 재료를 찾을 수 있을 것 같아요.",
+            "요리는 자신이 없지만...",
+            "재료를 잘 찾아보면 제가 만들 수 있는 괜찮은 음식을 만들 수 있을지 몰라요.",
+            "부엌에 도움될만한 것 이 있을까요?"
+          ]
+        }
+      ]
+    },
+    {
+      "place": "서재",
+      "placeImage": "bookRoom",
+      "indexArr": 2,
+      "script": [
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 2,
+          "speech": ["서재", "성공"]
+        },
+        {
+          "type": "word",
+          "character": "카르프",
+          "leftImage": "hue",
+          "rightImage": "karf",
+          "count": 2,
+          "speech": ["등장", "…"]
+        }
+      ]
+    },
+    {
+      "place": "내 방",
+      "placeImage": "myRoom",
+      "indexArr": 3,
+      "script": [
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 2,
+          "speech": ["실험실", "성공"]
+        },
+        {
+          "type": "word",
+          "character": "카르프",
+          "leftImage": "hue",
+          "rightImage": "karf",
+          "count": 2,
+          "speech": ["등장", "…"]
+        }
+      ]
+    },
+    {
+      "place": "창고",
+      "placeImage": "etcRoom",
+      "indexArr": 4,
+      "script": [
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 2,
+          "speech": ["창고", "성공"]
+        },
+        {
+          "type": "word",
+          "character": "카르프",
+          "leftImage": "hue",
+          "rightImage": "karf",
+          "count": 2,
+          "speech": ["등장", "…"]
+        }
+      ]
+    },
+    {
+      "place": "마당",
+      "placeImage": "houseOut",
+      "indexArr": 5,
+      "script": [
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 2,
+          "speech": ["마당", "성공"]
+        },
+        {
+          "type": "word",
+          "character": "카르프",
+          "leftImage": "hue",
+          "rightImage": "karf",
+          "count": 2,
+          "speech": ["등장", "…"]
+        }
+      ]
+    },
+    {
+      "place": "카르프의 방",
+      "placeImage": "house",
+      "indexArr": 6,
+      "script": [
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 2,
+          "speech": ["카르프의 방", "성공"]
+        },
+        {
+          "type": "word",
+          "character": "카르프",
+          "leftImage": "hue",
+          "rightImage": "karf",
+          "count": 2,
+          "speech": ["등장", "…"]
+        }
+      ]
+    },
+    {
+      "place": "식탁",
+      "placeImage": "kitchen",
+      "indexArr": 11,
+      "script": [
+        {
+          "type": "word",
+          "character": " ",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 3,
+          "speech": [
+            "(식탁을 살펴본다.)",
+            "(어두운 식탁보가 깔려있는 낡은 식탁 위에는 바구니가 놓여있다.)",
+            "(바구니 위에 덮여 있는 보자기를 치우자 마른 호밀빵과 치즈가 보인다.)"
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 8,
+          "speech": [
+            "이건... 어제 놓아두었던 식사에요.",
+            "... 카르프가 또 식사를 건너뛰었나봐요.",
+            "인간은 주기적으로 영양을 공급하지 않으면 약해진다고 카르프가 알려줬었어요.",
+            "카르프가 약해져서 쓰러지기라도할까봐 많이 걱정되어요.",
+            "...",
+            "역시 파티를 성공적으로 열어서 카르프에게 파티 음식을 잔뜩 먹여줘야겠어요!",
+            "영양을 잔뜩 섭취할 수 있는 음식에는 뭐가 있을까요?",
+            "아는 지식이 없어서 어렵네요..",
+            "이럴때는 책으로 정보를 찾아야한다고 배웠어요!",
+            "가끔 카르프가 요리하는걸 본적이 있으니까 방법만 알면 저도 만들 수 있을 거예요",
+            "아, 이 빵과 치즈는 챙겨둬야 겠네요.",
+            "재료는 많을수록 좋을테니까요!",
+            "맛있는 음식으로 만들어낼께요 카르프!"
+          ]
+        },
+        {
+          "type": "word",
+          "character": " ",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 1,
+          "speech": ["(마른 호밀빵과 치즈를 챙겼다.)"]
+        },
+        {
+          "type": "word",
+          "character": " ",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 1,
+          "speech": ["더 살펴볼까?"]
+        }
+      ]
+    },
+    {
+      "place": "창문",
+      "placeImage": "kitchen",
+      "indexArr": 12,
+      "script": [
+        {
+          "type": "word",
+          "character": " ",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 2,
+          "speech": [
+            "(창문을 열어본다.)",
+            "(창문 밖에는 여전히 눈이 내리고 있다.)",
+            "(아까보다 내리는 양이 많이 줄어들었다.)"
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 21,
+          "speech": [
+            "눈이 오는건 언제나봐도 신기해요.",
+            "벌써 다섯번도 넘게 봤는데도요",
+            "처음 눈을 봤을땐 구름이 떨어져 내리는 줄알고 놀랐어요.",
+            "가까히서 보니까 또 하얗고 보송보송한 촉감이 들어서 솜이라고 생각이 드는거에요",
+            "하하, 그래서 구름이 솜이구나 생각이 했다니까요.",
+            "솜이라 생각하니 카르프는 추위를 많이 타니까 잔뜩 가져와서 따뜻하게 만들어줘야지하고 잔뜩 들고 집에 들어갔어요.",
+            "거실에 잔뜩 쌓아서 카르프에게 보여주려고 카르프를 깨우러 갔는데",
+            "카르프를 깨우고 오는 그 짧은 시간만에 많은 눈이 다 녹아 사라져버린거에요!",
+            "제 몸에 묻어 있는 눈도 다 녹아서 온몸이 온통 축축해져 버리고...",
+            "남아있는건 흠뻑 젖어있는 거실 바닥뿐.",
+            "카르프는 제가 또 비가오는데 나가버린줄 알고 경악을 했는데 정말 억울했어요.",
+            "알고보니 벽난로의 열기에 눈이 다 녹아버린거였대요.",
+            "그 일 이후로는 앞으로 눈을 집으로 들이지 않기로 약속했어요.",
+            "그리고 저는 몸에 액체가 많이 닿으면 안되니까 카르프는 제가 눈을 가능한 만지지 않기를 원했었어요.",
+            "솜이 아니고 이건 눈이라는 얼음 결정이라 체온 때문에 눈을 만지면 녹아서 액체가 된다고 자세히 알려주면서요.",
+            "저는 '카르프, 저는 체온이 없어서 괜찮아요! 만졌을때 정말 솜같이 보송보송했어요 그래서 정말 솜인줄 알았다니까요.'라고 말했어요.",
+            "... 그건 정말 제 실수였어요.",
+            "카르프가 눈을 만지는건 용인해 줬지만 그 이후로는 눈은 잘 안만지려고해요.",
+            "그때 카르프의 표정이 생각나서요.",
+            "...",
+            "눈이 그쳐가니 슬슬 밖에 나가도 될 것 같아요."
+          ]
+        },
+        {
+          "type": "word",
+          "character": " ",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 1,
+          "speech": ["(창을 닫고 자리를 떠난다.)"]
+        },
+        {
+          "type": "word",
+          "character": " ",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 1,
+          "speech": ["더 살펴볼까?"]
+        }
+      ]
+    },
+    {
+      "place": "아궁이",
+      "placeImage": "kitchen",
+      "indexArr": 13,
+      "script": [
+        {
+          "type": "word",
+          "character": " ",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 2,
+          "speech": [
+            "(아궁이에는 커다란 솥이 놓여 있다.)",
+            "(솥에는 야채, 말린 고기 등이 들어 있는 차가운 스튜가 들어있다)"
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 10,
+          "speech": [
+            "어라? 불이 언제 꺼진걸까요.",
+            "화로에 나무가 모두 떨어졌었네요.",
+            "저희 집의 유일한 불씨를 지켜내지 못했네요...",
+            "겨울에는 화로에 불이 계속 켜져있는 편이 좋다고 카르프가 말했거든요.",
+            "불씨를 다시 붙일려면 카르프가 필요해요.",
+            "카르프는 마법으로 팟!하고 불씨를 만들어내거든요.",
+            "불을 만들어내는건 어렵지 않다 말했지만 카르프를 번거롭게 만들고 싶지 않았는데 어쩔 수 없네요.",
+            "그러고보니 마당에 장작이 남아 있었던가요?",
+            "마당에 남은 장작이 없다면 새로 장작을 구해야해요.",
+            "파티에 따듯한 스프를 위해서라도 파티전에 장작을 준비해야겠어요."
+          ]
+        },
+        {
+          "type": "word",
+          "character": " ",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 1,
+          "speech": ["(솥뚜껑을 닫고 자리를 떠난다.)"]
+        },
+        {
+          "type": "word",
+          "character": " ",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 1,
+          "speech": ["더 살펴볼까?"]
+        }
+      ]
+    },
+    {
+      "place": "자루",
+      "placeImage": "kitchen",
+      "indexArr": 14,
+      "script": [
+        {
+          "type": "word",
+          "character": " ",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 1,
+          "speech": ["(여러가지 자루가 한 곳에 모여있다)"]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 23,
+          "speech": [
+            "카르프가 휠라에게 부탁한 물건이에요.",
+            "연구재료들로 알고있어요. 제가 봐서는 하나도 모르겠지만요.",
+            "그러고보니 평소보다 자루들이 줄어들었네요.",
+            "카르프가 연구를 열심히 하고 있어서 그런가봐요. 조만간 휠라를 다시보게될지 모르겠어요.",
+            "알기로는 식재료로 사용되는 재료들이 아니라고 말했던 기억이 나요.",
+            "이 자루들은 파티준비에 사용할 수 없을 것 같아요."
+          ]
+        },
+        {
+          "type": "word",
+          "character": " ",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 1,
+          "speech": ["(자루를 정돈해두고 떠난다.)"]
+        },
+        {
+          "type": "word",
+          "character": " ",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 1,
+          "speech": ["더 살펴볼까?"]
+        }
+      ]
+    },
+    {
+      "place": "수납장",
+      "placeImage": "kitchen",
+      "indexArr": 15,
+      "script": [
+        {
+          "type": "word",
+          "character": " ",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 2,
+          "speech": [
+            "(선반위 수납장을 열어본다)",
+            "(말린 식재료와 치즈등 음식이 보관되어 있다.)"
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 7,
+          "speech": [
+            "여기도 저번에 봤을때하고 전혀 줄어들지 않았어요.",
+            "음식을 이렇게 오래 두어도 괜찮을까요?",
+            "카르프가 여름에 오래보관된 음식을 먹었다가 크게 아팠던적이 있어요",
+            "이 음식들도 채워넣은지 꽤 지난 것 같은데, 조금 걱정되네요.",
+            "...어라?",
+            "안쪽에 뭔가 더 있어요.",
+            "..."
+          ]
+        },
+        {
+          "type": "word",
+          "character": " ",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 2,
+          "speech": [
+            "(수납장 안쪽으로 손을 깊게 넣어 잡아 당기자 귀여운 바구니가 나왔다.)",
+            "(바구니를 열자 사탕과 초콜릿이 들어있다.)"
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 7,
+          "speech": [
+            "!",
+            "사탕과 초콜릿이에요!",
+            "그러고보니 할로윈이라는 행사에서 잔뜩 받았다고 휠라가 저희에게도 나눠준 선물이네요!",
+            "이곳에 넣어두고 까맣게 잊고 있었어요.",
+            "이 음식들은 오래두고 먹어도 된다고 휠라가 말해줬어요.",
+            "이 음식들도 파티에 내놓아야겠어요.",
+            "휠라가 정말 맛있는 디저트라고 이야기 해줬었어요. 카르프가 좋아해줬으면 좋겠네요."
+          ]
+        },
+        {
+          "type": "word",
+          "character": " ",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 1,
+          "speech": ["(수납장의 식재료와 디저트를 챙겼다.)"]
+        },
+        {
+          "type": "word",
+          "character": " ",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 1,
+          "speech": ["더 살펴볼까?"]
+        }
+      ]
+    },
+    {
+      "place": "식물",
+      "placeImage": "kitchen",
+      "indexArr": 16,
+      "script": [
+        {
+          "type": "word",
+          "character": " ",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 2,
+          "speech": [
+            "(창가에 조그만 화분이 놓여있다.)",
+            "(화분안에는 흙이 담겨있다.)"
+          ]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 2,
+          "speech": [
+            "원래 이 안에는 꽃이 있었어요.",
+            "여름내내 싱그러운 아이였는데 제 방에 너무 두어서인지 어느날부터 점점 시들해지더라고요.",
+            "잎사귀가 하나 둘 시들기 시작하고나서야 햇빛이 문제인가 싶어서 자리를 거실로 옮겨도 결국 똑같았어요.",
+            "카르프는 쉽게 시들지 않는 꽃인데 이상하다며 시든 줄기를 자르자고 했지만 저는 그러기 싫었어요.",
+            "카르프를 설득해서 시든 줄기를 자르지 않고 열심히 돌봐주었지만 결국 죽어버리고 말았죠...",
+            "...",
+            "저는 이 꽃이 잘리지않고 끝까지 함께해줘서 기뻐해줬을거라 생각해요.",
+            "그래도 꽤 오래 버텨주었거든요. 카르프도 놀라워했어요.",
+            "내년에는 오래오래 같이 있을 수 있도록 열심히 돌봐주려고해요.",
+            "다시 시들더라도 다시 뿅하고 살아날 수 있게 자라면 좋겠어요."
+          ]
+        },
+        {
+          "type": "word",
+          "character": " ",
+          "leftImage": null,
+          "rightImage": null,
+          "count": 1,
+          "speech": ["더 살펴볼까?"]
+        }
+      ]
+    },
+    {
+      "place": "선택지 예시로 남겨놓은 더미",
+      "placeImage": "kitchen",
+      "indexArr": 19,
+      "script": [
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": null,
+          "count": 2,
+          "speech": ["수납장", "성공"]
         },
         {
           "type": "word",
@@ -29,9 +544,12 @@
           "selectOption": [
             {
               "option": "선택1",
-              "trust": 1,
-              "Confidence": 0,
-              "item": "책",
+              "trust": 0,
+              "confidence": 3,
+              "item": 0,
+              "selectDance": null,
+              "present": "책",
+              "hidden": null,
               "ending": null,
               "script": [
                 {
@@ -62,9 +580,12 @@
             },
             {
               "option": "선택2",
-              "trust": 1,
-              "Confidence": 0,
-              "item": "",
+              "trust": 0,
+              "confidence": 0,
+              "item": 50,
+              "selectDance": null,
+              "present": "꽃",
+              "hidden": null,
               "ending": null,
               "script": [
                 {
@@ -87,9 +608,12 @@
             },
             {
               "option": "선택3",
-              "trust": 1,
-              "Confidence": 0,
-              "item": "책",
+              "trust": 0,
+              "confidence": 5,
+              "item": 100,
+              "selectDance": null,
+              "present": "펜",
+              "hidden": null,
               "ending": null,
               "script": [
                 {
@@ -139,40 +663,10 @@
         {
           "type": "word",
           "character": "카르프",
-          "leftImage": null,
-          "rightImage": "karf",
-          "count": 1,
-          "speech": ["슬프네"]
-        }
-      ]
-    },
-    {
-      "place": "forest",
-      "placeImage": "forest",
-      "script": [
-        {
-          "type": "word",
-          "character": "휴",
-          "leftImage": "hue",
-          "rightImage": null,
-          "count": 3,
-          "speech": ["우와 카르프, 눈이 와요!", "…", "대답이 없네요."]
-        },
-        {
-          "type": "word",
-          "character": "카르프",
-          "leftImage": "hue",
-          "rightImage": "karf",
-          "count": 2,
-          "speech": ["등장", "…"]
-        },
-        {
-          "type": "word",
-          "character": "휴",
           "leftImage": "hue",
           "rightImage": "karf",
           "count": 1,
-          "speech": ["!"]
+          "speech": ["더 살펴볼까?"]
         }
       ]
     }

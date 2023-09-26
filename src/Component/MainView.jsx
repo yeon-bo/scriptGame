@@ -32,7 +32,7 @@ const CharacterLeft = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
-  width: 300px;
+  width: 360px;
 `;
 
 const CharacterRight = styled.div`
@@ -44,7 +44,7 @@ const CharacterRight = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
-  width: 300px;
+  width: 360px;
 `;
 
 const ScriptBox = styled.div`

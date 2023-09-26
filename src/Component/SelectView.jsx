@@ -155,8 +155,8 @@ const SelectView = ({
   const [text, setText] = useState(
     data.section[section].script[script].speech[speech]
   );
-
   const sectionType = "story";
+
   const ScriptClick = () => {
     if (!selectedSet.has(currentPlace[1])) {
       const currentSection = data.section[section];
@@ -195,24 +195,28 @@ const SelectView = ({
       }
     }
 
+    const findIndex = data.section[currentPlace[1]].indexArr;
     // 중분류 script가 끝났다면
-    if (currentPlace[1] > 5) {
-      //만약 중분류가 아니라면(5은 대분류 갯수)
-      if (5 < currentPlace[1] && currentPlace[1] < 11) {
+    if (findIndex > 10) {
+      //만약 중분류가 아니라면(10은 대분류 갯수)
+      if (10 < findIndex && findIndex < 20) {
         // 중분류 선택지를 보여주기
         setCurrentPlace([true, 1]);
       }
-      if (10 < currentPlace[1] && currentPlace[1] < 16) {
+      if (20 < findIndex && findIndex < 30) {
         setCurrentPlace([true, 2]);
       }
-      if (15 < currentPlace[1] && currentPlace[1] < 21) {
+      if (30 < findIndex && findIndex < 40) {
         setCurrentPlace([true, 3]);
       }
-      if (20 < currentPlace[1] && currentPlace[1] < 26) {
+      if (40 < findIndex && findIndex < 50) {
         setCurrentPlace([true, 4]);
       }
-      if (25 < currentPlace[1] && currentPlace[1] < 31) {
+      if (50 < findIndex && findIndex < 60) {
         setCurrentPlace([true, 5]);
+      }
+      if (60 < findIndex && findIndex < 70) {
+        setCurrentPlace([true, 6]);
       }
       setTypingE(true);
       setScript(0);
@@ -222,7 +226,7 @@ const SelectView = ({
     }
 
     // 해당 section(장소)를 모두 출력했는가? no면 다음 section로
-    setCurrentPlace([true, currentPlace[1]]);
+    setCurrentPlace([true, findIndex]);
     setTypingE(true);
     setScript(0);
     setSpeech(0);
@@ -345,20 +349,23 @@ const SelectView = ({
   }, [jsonData]);
 
   const currentPlaceFunc = (e) => {
-    if (5 < e && e < 11) {
+    if (10 < e && e < 20) {
       return 1;
     }
-    if (10 < e && e < 16) {
+    if (20 < e && e < 30) {
       return 2;
     }
-    if (15 < e && e < 21) {
+    if (30 < e && e < 40) {
       return 3;
     }
-    if (20 < e && e < 26) {
+    if (40 < e && e < 50) {
       return 4;
     }
-    if (25 < e && e < 31) {
+    if (50 < e && e < 60) {
       return 5;
+    }
+    if (60 < e && e < 70) {
+      return 6;
     }
     return e;
   };

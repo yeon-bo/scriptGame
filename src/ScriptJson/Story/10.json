@@ -1,6 +1,6 @@
 {
   "fileName": "story1",
-  "count": 3,
+  "count": 5,
   "section": [
     {
       "type": "illustration",
@@ -127,7 +127,7 @@
           "type": "word",
           "character": "휠라",
           "leftImage": null,
-          "rightImage": null,
+          "rightImage": "hwilla",
           "count": 1,
           "speech": ["안녕하세요 휴!"]
         },
@@ -135,18 +135,33 @@
           "type": "word",
           "character": "휴",
           "leftImage": "hue",
-          "rightImage": null,
+          "rightImage": "hwilla",
           "count": 1,
           "speech": ["휠라!"]
         },
         {
           "type": "word",
           "character": "휠라",
-          "leftImage": null,
-          "rightImage": null,
-          "count": 4,
+          "leftImage": "hue",
+          "rightImage": "hwilla",
+          "count": 1,
+          "speech": ["휴씨 오랫만이예요!"]
+        },
+        {
+          "type": "word",
+          "character": "휴",
+          "leftImage": "hue",
+          "rightImage": "hwilla",
+          "count": 1,
+          "speech": ["하하, 오랜만이에요 반가워요"]
+        },
+        {
+          "type": "word",
+          "character": "휠라",
+          "leftImage": "hue",
+          "rightImage": "hwilla",
+          "count": 3,
           "speech": [
-            "휴씨 오랫만이예요!",
             "지난달이 저희 마지막으로 본거죠?",
             "자주 불러주시지! 이러다 얼굴까먹겠어요!",
             "그것보다 휴씨가 반겨준건 드문일인데 기쁘네요!"
@@ -156,19 +171,18 @@
           "type": "word",
           "character": "휴",
           "leftImage": "hue",
-          "rightImage": null,
-          "count": 3,
+          "rightImage": "hwilla",
+          "count": 2,
           "speech": [
-            "하하, 오랜만이에요 반가워요",
-            "배달일로 온건가요?",
+            "휠라는 배달일로 온건가요?",
             "어라, 이상하다 최근에 부탁한건 없을텐데..?"
           ]
         },
         {
           "type": "word",
           "character": "휠라",
-          "leftImage": null,
-          "rightImage": null,
+          "leftImage": "hue",
+          "rightImage": "hwilla",
           "count": 2,
           "speech": ["후후.. 배달 아니예요.", "오늘은 개인적으로 온거거든요!"]
         },
@@ -176,15 +190,15 @@
           "type": "word",
           "character": "휴",
           "leftImage": "hue",
-          "rightImage": null,
+          "rightImage": "hwilla",
           "count": 1,
           "speech": ["개인적으로요?"]
         },
         {
           "type": "word",
           "character": "휠라",
-          "leftImage": null,
-          "rightImage": null,
+          "leftImage": "hue",
+          "rightImage": "hwilla",
           "count": 2,
           "speech": ["네!", "그러고보니 카르프씨는 안계신가요?"]
         },
@@ -192,19 +206,19 @@
           "type": "word",
           "character": "휴",
           "leftImage": "hue",
-          "rightImage": null,
+          "rightImage": "hwilla",
           "count": 3,
           "speech": [
             "…",
-            "카르프는 지금 자고 있어요.",
-            "방금전에 잠들어서 깨우기 힘들 것 같아요."
+            "음.. 그게 방금전에 카르프가 막 잠들었거든요.",
+            "많이 피곤해보여서 깨우기 힘들 것 같아요."
           ]
         },
         {
           "type": "word",
           "character": "휠라",
-          "leftImage": null,
-          "rightImage": null,
+          "leftImage": "hue",
+          "rightImage": "hwilla",
           "count": 4,
           "speech": [
             "지금 한낮 인데요?",
@@ -217,13 +231,13 @@
           "type": "word",
           "character": "휴",
           "leftImage": "hue",
-          "rightImage": null,
+          "rightImage": "hwilla",
           "count": 7,
           "speech": [
             "하하하",
             "(정말 잔소리는 필요할지도 모르겠어요.)",
-            "그러고보니 휠라 개인적인 일이라면 무슨일인가요?",
-            "카르프가 필요한 일인가요?",
+            "휠라 개인적인 일이라면 무슨일인가요?",
+            "혹시 카르프가 필요한 일인가요?",
             "(손님 응대는 처음인데 어떻게 해야하죠?)",
             "(이럴 땐, 책에서는..)",
             "안으로 들어올래요? 눈도 이렇게 내리는데 오는데 힘들었겠어요."
@@ -232,8 +246,8 @@
         {
           "type": "word",
           "character": "휠라",
-          "leftImage": null,
-          "rightImage": null,
+          "leftImage": "hue",
+          "rightImage": "hwilla",
           "count": 3,
           "speech": [
             "괜찮아요. 근무중에 들린 것이라 오래 있을 순 없거든요!",
@@ -245,15 +259,15 @@
           "type": "word",
           "character": "",
           "leftImage": null,
-          "rightImage": null,
+          "rightImage": "hwilla",
           "count": 1,
-          "speech": ["예쁜 포장지에 쌓여 있는 선물을 건내준다"]
+          "speech": ["(예쁜 포장지에 쌓여 있는 선물을 건내준다)"]
         },
         {
           "type": "word",
           "character": "휠라",
-          "leftImage": null,
-          "rightImage": null,
+          "leftImage": "hue",
+          "rightImage": "hwilla",
           "count": 7,
           "speech": [
             "미리 메리 크리스마스~!",
@@ -269,7 +283,7 @@
           "type": "word",
           "character": "휴",
           "leftImage": "hue",
-          "rightImage": null,
+          "rightImage": "hwilla",
           "count": 4,
           "speech": [
             "와, 선물이요? 정말 고마워요!",
@@ -281,8 +295,8 @@
         {
           "type": "word",
           "character": "휠라",
-          "leftImage": null,
-          "rightImage": null,
+          "leftImage": "hue",
+          "rightImage": "hwilla",
           "count": 2,
           "speech": ["네??", "무슨 소리예요 휴? 크리스마스 몰라요?"]
         },
@@ -290,7 +304,7 @@
           "type": "word",
           "character": "휴",
           "leftImage": "hue",
-          "rightImage": null,
+          "rightImage": "hwilla",
           "count": 10,
           "speech": [
             "그게 그러니까…",
@@ -302,14 +316,14 @@
             "그러니까… 계속 아프다보니 바깥일에 많이 둔해요.",
             "약간 부끄럽네요. ",
             "선물 정말 고마워요. 휠라같은 친구가 있어서 너무 기뻐요.",
-            "저도 다음에 휠라 선물을 준비하고 있을께요."
+            "저도 다음에 크리스마스 선물을 준비하고 있을께요."
           ]
         },
         {
           "type": "word",
           "character": "휠라",
-          "leftImage": null,
-          "rightImage": null,
+          "leftImage": "hue",
+          "rightImage": "hwilla",
           "count": 6,
           "speech": [
             "!",
@@ -324,28 +338,28 @@
           "type": "word",
           "character": "휴",
           "leftImage": "hue",
-          "rightImage": null,
+          "rightImage": "hwilla",
           "count": 1,
           "speech": ["네, 고마워요."]
         },
         {
           "type": "word",
           "character": "휠라",
-          "leftImage": null,
-          "rightImage": null,
+          "leftImage": "hue",
+          "rightImage": "hwilla",
           "count": 2,
           "speech": [
             "그렇담, 제가 크리스마스에 대해 알려줄까요?",
             "아니, 제가 알려줄래요!",
             "이 기회에 휴와 카르프를 마을로 내려오게해서 크리스마스를 즐기게 해줘야겠어요",
-            "저희 마을에서 크리스마스는 아주 특별한 행사라 홍보도 같이 해도 될까요!"
+            "저희 마을은 크리스마스 행사를 어마어마하게 크게 열거든요! 홍보도 같이 해도 될까요!"
           ]
         },
         {
           "type": "word",
           "character": "휴",
           "leftImage": "hue",
-          "rightImage": null,
+          "rightImage": "hwilla",
           "count": 2,
           "speech": [
             "저야 고맙죠. 감사해요.",
@@ -356,11 +370,12 @@
         {
           "type": "word",
           "character": "휠라",
-          "leftImage": null,
-          "rightImage": null,
-          "count": 8,
+          "leftImage": "hue",
+          "rightImage": "hwilla",
+          "count": 9,
           "speech": [
-            "혹시라는게 있잖아요? 히히 제말을 듣고 마을로 내려와주면 정말 기쁠거에요.",
+            "혹시라는게 있잖아요?",
+            "히히 제말을 듣고 마을로 내려와주면 정말 기쁠거에요.",
             "그러니까 오늘이 20일이니까 5일 뒤 12월 25일이 크리스마스에요!",
             "음~ 의미적으로 말하자면 크리스마스는 매년 새해가 오기 일주일 전에 한해를 무사히 보낸 것을 기념하는 날이에요.",
             "더 구체적으로 말하면 한 해를 마무리하고 다음 해를 맞이하는 날이죠.",
@@ -375,15 +390,15 @@
           "type": "word",
           "character": "휴",
           "leftImage": "hue",
-          "rightImage": null,
+          "rightImage": "hwilla",
           "count": 1,
           "speech": ["파티요?"]
         },
         {
           "type": "word",
           "character": "휠라",
-          "leftImage": null,
-          "rightImage": null,
+          "leftImage": "hue",
+          "rightImage": "hwilla",
           "count": 5,
           "speech": [
             "네, 파티! 성대하고 큰 파티!",
@@ -397,24 +412,24 @@
           "type": "word",
           "character": "휴",
           "leftImage": "hue",
-          "rightImage": null,
+          "rightImage": "hwilla",
           "count": 1,
-          "speech": ["와아, 얼마나 성대하게 하는건가요?"]
+          "speech": ["얼마나 성대하게 하는건가요?"]
         },
         {
           "type": "word",
           "character": "휠라",
-          "leftImage": null,
-          "rightImage": null,
+          "leftImage": "hue",
+          "rightImage": "hwilla",
           "count": 9,
           "speech": [
-            "무려 광장에서 마을사람 모두 다같이 나와서 즐긴답니다!",
+            "마을 전체가 파티장소라고 한다면 상상이 가시나요!",
+            "마을사람 모두 다같이 나와서 즐긴답니다!",
             "주택가부터 광장까지 화려한 조명과 크리스마스를 기념하는 조형물!",
             "모두가 배터질때까지 먹을 수 있고 마실 수 있는 맛있는 요리들!",
-            "넓은 광장에서 마을 사람들과 한 해동안 있었던 일들을 슬픔을 덜고 내년의 행복을 나누고!",
-            "심지어 요즘은 눈도 자주오니까 화이트 크리스마스가 될지도 몰라요!",
+            "요즘은 눈도 자주오니까 화이트 크리스마스가 될지도 몰라요!",
             "큰 광장에서 다같이 왁자지껄하게 흰 눈과 함께 보내는 크리스마스라니, 말만 들어도 아름답지않나요.",
-            "상상만해도 기분이 좋아져요 당장 내일이라도 크리스마스가 되었으면 좋겠어요.",
+            "벌써 기분이 좋아져요 당장 내일이라도 크리스마스가 되었으면 좋겠어요.",
             "앗 사설이 길어지겠어요.",
             "그러니까 즉, 크리스마스는 최고로 멋있고 모두가 행복해지는 굉장한 연말 파티에요!"
           ]
@@ -423,18 +438,18 @@
           "type": "word",
           "character": "휴",
           "leftImage": "hue",
-          "rightImage": null,
+          "rightImage": "hwilla",
           "count": 2,
           "speech": [
-            "휠라가 말하는 것만 들어도 정말 행복해 보이는 파티인 것 같아요.",
+            "휠라가 말하는 것만 들어도 정말 행복한 파티인 것 같아요.",
             "크리스마스는 굉장한 파티군요."
           ]
         },
         {
           "type": "word",
           "character": "휠라",
-          "leftImage": null,
-          "rightImage": null,
+          "leftImage": "hue",
+          "rightImage": "hwilla",
           "count": 4,
           "speech": [
             "그거예요!",
@@ -447,7 +462,7 @@
           "type": "word",
           "character": "휴",
           "leftImage": "hue",
-          "rightImage": null,
+          "rightImage": "hwilla",
           "count": 1,
           "speech": [
             "하하, 말은 고맙지만 저는 몸이 너무 아파서요.",
@@ -457,8 +472,8 @@
         {
           "type": "word",
           "character": "휠라",
-          "leftImage": null,
-          "rightImage": null,
+          "leftImage": "hue",
+          "rightImage": "hwilla",
           "count": 7,
           "speech": [
             "으윽.. 제 홍보가 실패했네요",
@@ -474,29 +489,29 @@
           "type": "word",
           "character": "휴",
           "leftImage": "hue",
-          "rightImage": null,
+          "rightImage": "hwilla",
           "count": 1,
           "speech": ["파티를 여는 법이요?"]
         },
         {
           "type": "word",
           "character": "휠라",
-          "leftImage": null,
-          "rightImage": null,
+          "leftImage": "hue",
+          "rightImage": "hwilla",
           "count": 5,
           "speech": [
             "파티는 소중한 사람과 있다는 것이 중요하죠!",
             "자, 어때요 크리스마스 파티 즐기고 싶지않나요?",
             "크리스마스라는 굉장한 날을 알아버렸는데 그냥 넘어갈건가요?",
             "제 조언을 들어보실 생각없나요? 크리스마스는 모두가 행복해질 권리가 있는 날이에요!",
-            "파티 준비하다가 저희 마을 파티가 궁금해져서 슬쩍 내려왔으면 좋겠다는 사심으로 말하고있지만..!"
+            "파티 준비하다가 저희 마을 파티가 궁금해져서 슬쩍 내려왔으면 좋겠다는 사심도 없지 않지만요..!"
           ]
         },
         {
           "type": "word",
           "character": "휴",
           "leftImage": "hue",
-          "rightImage": null,
+          "rightImage": "hwilla",
           "count": 4,
           "speech": [
             "하하하.",
@@ -508,8 +523,8 @@
         {
           "type": "word",
           "character": "휠라",
-          "leftImage": null,
-          "rightImage": null,
+          "leftImage": "hue",
+          "rightImage": "hwilla",
           "count": 8,
           "speech": [
             "잘생각했어요! ",
@@ -526,7 +541,7 @@
           "type": "word",
           "character": "휴",
           "leftImage": "hue",
-          "rightImage": null,
+          "rightImage": "hwilla",
           "count": 3,
           "speech": [
             "집에 꾸밀만한 장식이 있는지 찾아봐야겠어요.",
@@ -537,8 +552,8 @@
         {
           "type": "word",
           "character": "휠라",
-          "leftImage": null,
-          "rightImage": null,
+          "leftImage": "hue",
+          "rightImage": "hwilla",
           "count": 5,
           "speech": [
             "이제 시작이죠!",
@@ -553,7 +568,7 @@
           "type": "word",
           "character": "휴",
           "leftImage": "hue",
-          "rightImage": null,
+          "rightImage": "hwilla",
           "count": 3,
           "speech": [
             "…조언 고마워요. 조심히 해야겠어요.",
@@ -564,8 +579,8 @@
         {
           "type": "word",
           "character": "휠라",
-          "leftImage": null,
-          "rightImage": null,
+          "leftImage": "hue",
+          "rightImage": "hwilla",
           "count": 1,
           "speech": [
             "요리는 정성만 보이면 되는거죠~ 할 수 있는 것까지만 해봐요."
@@ -582,8 +597,8 @@
         {
           "type": "word",
           "character": "휠라",
-          "leftImage": null,
-          "rightImage": null,
+          "leftImage": "hue",
+          "rightImage": "hwilla",
           "count": 4,
           "speech": [
             "장소랑 음식이랑…",
@@ -596,7 +611,7 @@
           "type": "word",
           "character": "휴",
           "leftImage": "hue",
-          "rightImage": null,
+          "rightImage": "hwilla",
           "count": 5,
           "speech": [
             "하하, 물론이에요.",
@@ -609,8 +624,8 @@
         {
           "type": "word",
           "character": "휠라",
-          "leftImage": null,
-          "rightImage": null,
+          "leftImage": "hue",
+          "rightImage": "hwilla",
           "count": 3,
           "speech": [
             "아직 준비할게 남아있어요 휴!",
@@ -622,15 +637,15 @@
           "type": "word",
           "character": "휴",
           "leftImage": "hue",
-          "rightImage": null,
+          "rightImage": "hwilla",
           "count": 1,
           "speech": ["소원을 비는 풍등?"]
         },
         {
           "type": "word",
           "character": "휠라",
-          "leftImage": null,
-          "rightImage": null,
+          "leftImage": "hue",
+          "rightImage": "hwilla",
           "count": 6,
           "speech": [
             "크리스마스가 되는 정각에 맞춰서 소원을 적은 풍등을 하늘로 높이 보내는거에요.",
@@ -646,7 +661,7 @@
           "type": "word",
           "character": "휴",
           "leftImage": "hue",
-          "rightImage": null,
+          "rightImage": "hwilla",
           "count": 2,
           "speech": [
             "와, 하늘의 별들이 모두 저희 소원이였군요.",
@@ -656,8 +671,8 @@
         {
           "type": "word",
           "character": "휠라",
-          "leftImage": null,
-          "rightImage": null,
+          "leftImage": "hue",
+          "rightImage": "hwilla",
           "count": 6,
           "speech": [
             "그쵸!",
@@ -672,10 +687,11 @@
           "type": "word",
           "character": "휴",
           "leftImage": "hue",
-          "rightImage": null,
-          "count": 3,
+          "rightImage": "hwilla",
+          "count": 4,
           "speech": [
             "(저를 만든건 카르프인데… 주신은 저의 소원도 들어줄까요?)",
+            "(기억을 잃기 전 저는 인간일테니 들어줄지도 모르겠네요.)",
             "주신이 저의 소원도 들어주셨으면 좋겠네요.",
             "혹시 휠라는 지금까지 소원이 이뤄졌나요?"
           ]
@@ -683,8 +699,8 @@
         {
           "type": "word",
           "character": "휠라",
-          "leftImage": null,
-          "rightImage": null,
+          "leftImage": "hue",
+          "rightImage": "hwilla",
           "count": 6,
           "speech": [
             "저는 매년 소원을 들어주셨죠~",
@@ -699,15 +715,15 @@
           "type": "word",
           "character": "휴",
           "leftImage": "hue",
-          "rightImage": null,
+          "rightImage": "hwilla",
           "count": 1,
           "speech": ["하하 좋아요 그렇게 해볼게요."]
         },
         {
           "type": "word",
           "character": "휠라",
-          "leftImage": null,
-          "rightImage": null,
+          "leftImage": "hue",
+          "rightImage": "hwilla",
           "count": 7,
           "speech": [
             "좋아요. 다시 말하지만  완벽하게 준비하지 않아도 괜찮으니 할 수 있는 것 까지만 해봐요.",
@@ -723,7 +739,7 @@
           "type": "word",
           "character": "휴",
           "leftImage": "hue",
-          "rightImage": null,
+          "rightImage": "hwilla",
           "count": 5,
           "speech": [
             "마음은 고맙지만...",
@@ -736,8 +752,8 @@
         {
           "type": "word",
           "character": "휠라",
-          "leftImage": null,
-          "rightImage": null,
+          "leftImage": "hue",
+          "rightImage": "hwilla",
           "count": 5,
           "speech": [
             "으아아 꼭 와주세요!",
@@ -751,7 +767,7 @@
           "type": "word",
           "character": "휴",
           "leftImage": "hue",
-          "rightImage": null,
+          "rightImage": "hwilla",
           "count": 2,
           "speech": [
             "꼭 카르프를 열심히 설득해볼께요!",
@@ -761,8 +777,8 @@
         {
           "type": "word",
           "character": "휠라",
-          "leftImage": null,
-          "rightImage": null,
+          "leftImage": "hue",
+          "rightImage": "hwilla",
           "count": 4,
           "speech": [
             "좋아요. 저도 휴를 마을에서 봤으면 좋겠네요.",
@@ -775,7 +791,7 @@
           "type": "word",
           "character": "휴",
           "leftImage": "hue",
-          "rightImage": null,
+          "rightImage": "hwilla",
           "count": 2,
           "speech": [
             "휠라는 저에게 좋은 경험을 알려주려고 한거 알고 있어요.",
@@ -785,12 +801,12 @@
         {
           "type": "word",
           "character": "휠라",
-          "leftImage": null,
-          "rightImage": null,
+          "leftImage": "hue",
+          "rightImage": "hwilla",
           "count": 4,
           "speech": [
             "휴는 역시 상냥해요...",
-            "파티에 맛있는 장소, 음식, 선물, 풍등 잊지 마세요!",
+            "파티에 멋있는 장소, 음식, 선물, 풍등 잊지 마세요!",
             "아참,",
             "그리고 제일 중요한 하나가 더 있네요."
           ]
@@ -799,15 +815,15 @@
           "type": "word",
           "character": "휴",
           "leftImage": "hue",
-          "rightImage": null,
+          "rightImage": "hwilla",
           "count": 1,
           "speech": ["준비해야할 것이 더 있나요..?"]
         },
         {
           "type": "word",
           "character": "휠라",
-          "leftImage": null,
-          "rightImage": null,
+          "leftImage": "hue",
+          "rightImage": "hwilla",
           "count": 7,
           "speech": [
             "하하 당황하셨군요",
@@ -823,7 +839,7 @@
           "type": "word",
           "character": "휴",
           "leftImage": "hue",
-          "rightImage": null,
+          "rightImage": "hwilla",
           "count": 3,
           "speech": [
             "아하하",
@@ -834,8 +850,8 @@
         {
           "type": "word",
           "character": "휠라",
-          "leftImage": null,
-          "rightImage": null,
+          "leftImage": "hue",
+          "rightImage": "hwilla",
           "count": 3,
           "speech": [
             "완벽해요!",
@@ -847,15 +863,15 @@
           "type": "word",
           "character": "휴",
           "leftImage": "hue",
-          "rightImage": null,
+          "rightImage": "hwilla",
           "count": 2,
           "speech": ["…", "그렇네요."]
         },
         {
           "type": "word",
           "character": "휠라",
-          "leftImage": null,
-          "rightImage": null,
+          "leftImage": "hue",
+          "rightImage": "hwilla",
           "count": 4,
           "speech": [
             "히히 좋아요~",
@@ -868,15 +884,15 @@
           "type": "word",
           "character": "휴",
           "leftImage": "hue",
-          "rightImage": null,
+          "rightImage": "hwilla",
           "count": 1,
           "speech": ["?"]
         },
         {
           "type": "word",
           "character": "휠라",
-          "leftImage": null,
-          "rightImage": null,
+          "leftImage": "hue",
+          "rightImage": "hwilla",
           "count": 4,
           "speech": [
             "생각보다 오래 있어버렸네요! 진짜 선물만 주고 갈려했는데..!",
@@ -889,15 +905,15 @@
           "type": "word",
           "character": "휴",
           "leftImage": "hue",
-          "rightImage": null,
+          "rightImage": "hwilla",
           "count": 1,
           "speech": ["물론이에요."]
         },
         {
           "type": "word",
           "character": "휠라",
-          "leftImage": null,
-          "rightImage": null,
+          "leftImage": "hue",
+          "rightImage": "hwilla",
           "count": 1,
           "speech": [
             "그럼 정말 마지막! 최종!으로 크리스마스를 행복한 크리스마스를 위한 마법의 주문을 알려줄께요!"
@@ -907,15 +923,15 @@
           "type": "word",
           "character": "휴",
           "leftImage": "hue",
-          "rightImage": null,
+          "rightImage": "hwilla",
           "count": 1,
           "speech": ["하하하 네 좋아요."]
         },
         {
           "type": "word",
           "character": "휠라",
-          "leftImage": null,
-          "rightImage": null,
+          "leftImage": "hue",
+          "rightImage": "hwilla",
           "count": 4,
           "speech": [
             "메리 크리스마스~! 휴.",
@@ -926,7 +942,7 @@
           "type": "word",
           "character": "휴",
           "leftImage": "hue",
-          "rightImage": null,
+          "rightImage": "hwilla",
           "count": 1,
           "speech": [
             "!",
@@ -959,11 +975,12 @@
             "휠라 덕분에 즐거운 정보를 알았네요.",
             "(카르프는 크리스마스를 알고 있었을까요?)",
             "(알고 있었더라면 저에게 말해줘도 되었을텐데요.)",
-            "(…)",
+            "…",
             "(생각해보니 이런 걸 알려준 적은 한번도 없었어요…)",
             "(저번에 생일이란 것도 휠라에게 처음 들었었죠.)",
             "(항상 연구와 실험으로만으로 바빠서 이런 기념일들을 깜박한걸까요?)",
-            "(저라도 챙기지 않으면 카르프는 계속 이런 특별한 날들을 지나쳐 버릴거예요.)",
+            "(아니면 제가 언젠가 기억이 모두 떠오르면 생각날테니 알려줄 필요가 없다 생각한걸까요.)",
+            "(...제가 챙기지 않으면 카르프는 계속 이런 특별한 날들을 지나쳐 버릴거예요.)",
             "(크리스마스 파티를 준비 해야겠어요. 카르프 몰래 깜짝 파티로요!)",
             "(아, 책에서 봤는데 그냥 파티보다 깜짝파티가 더 재밌어 보였거든요.)",
             "(휠라가 말한 마을에서의 파티를 즐겨보고도 싶지만)",

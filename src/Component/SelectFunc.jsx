@@ -67,6 +67,26 @@ const SelectFunc = ({
   setText,
 }) => {
   const selectSwitch = (num) => {
+    const placeDivision = (indexArr, index) => {
+      console.log(indexArr, index);
+      if (indexArr === 0) {
+        return index;
+      } else if (indexArr < 10) {
+        const indexArrfind = indexArr * 10 + index;
+        const findIndex = data.section.findIndex(
+          (list) => list.indexArr === indexArrfind
+        );
+        return findIndex;
+      } else {
+        const input = parseInt(indexArr / 10);
+        const indexArrfind = input * 10 + index;
+        const findIndex = data.section.findIndex(
+          (list) => list.indexArr === indexArrfind
+        );
+        return findIndex;
+      }
+    };
+
     switch (num) {
       case "nomal":
         return (
@@ -100,24 +120,31 @@ const SelectFunc = ({
               <SelectBox
                 key={index}
                 onClick={() => {
+                  console.log(data.section[placeDivision(indexArr, index + 1)]);
                   setSelectData(null);
-                  setSection(index + indexArr + 1);
-                  setCurrentPlace([false, index + indexArr + 1]);
-                  setPlace(data.section[index + indexArr + 1].placeImage);
+                  setSection(placeDivision(indexArr, index + 1));
+                  setCurrentPlace([false, placeDivision(indexArr, index + 1)]);
+                  setPlace(
+                    data.section[placeDivision(indexArr, index + 1)].placeImage
+                  );
                   setCharacter(
-                    !selectedSet.has(index + indexArr + 1)
-                      ? data.section[index + indexArr + 1].script[0].character
+                    !selectedSet.has(placeDivision(indexArr, index + 1))
+                      ? data.section[placeDivision(indexArr, index + 1)]
+                          .script[0].character
                       : "휴"
                   );
                   setLeftImage(
-                    data.section[index + indexArr + 1].script[0].leftImage
+                    data.section[placeDivision(indexArr, index + 1)].script[0]
+                      .leftImage
                   );
                   setRightImage(
-                    data.section[index + indexArr + 1].script[0].rightImage
+                    data.section[placeDivision(indexArr, index + 1)].script[0]
+                      .rightImage
                   );
                   setText(
-                    !selectedSet.has(index + indexArr + 1)
-                      ? data.section[index + indexArr + 1].script[0].speech[0]
+                    !selectedSet.has(placeDivision(indexArr, index + 1))
+                      ? data.section[placeDivision(indexArr, index + 1)]
+                          .script[0].speech[0]
                       : "여긴 살펴본 것 같다."
                   );
                 }}
